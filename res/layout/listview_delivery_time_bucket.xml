@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="630dp"
+    android:layout_height="wrap_content"
+    >
+    
+    <TextView
+        android:id="@+id/tv_listview_delivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginLeft="30dp"
+	    android:layout_marginTop="15dp"
+	    android:text="请选择支持外送服务的营业时间段"
+        />
+    
+    <ListView
+        android:id="@+id/listview_delivery_time_bucket_list_all"
+        android:layout_width="630dp" 
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginLeft="30dp"   
+	    android:divider="@null" 
+        />
+    
+
+</RelativeLayout>

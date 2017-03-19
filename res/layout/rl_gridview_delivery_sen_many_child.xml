@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:test="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#47505a">
+     
+    <com.huofu.RestaurantOS.ui.pannel.delivery.HorizontalListView
+        android:id="@+id/horizntalScrollview_choose_many_send_order"
+        android:layout_width="924dp"
+        android:layout_height="128dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:scrollbarFadeDuration="1000000"
+        android:scrollbars="horizontal"
+        android:background="#47505a"
+        />
+        
+	<Button
+	    android:id="@+id/button_gridview_delivery_send_many"
+	    android:layout_width="50dp"
+	    android:layout_height="50dp"
+	    android:text="配送"
+	    android:background="@drawable/delivery_circle"
+	    android:layout_centerVertical="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="45dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="20dp"
+	    />    
+
+</RelativeLayout>

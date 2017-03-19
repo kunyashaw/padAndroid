@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="768dp"
+    android:background="#f6f6f6"
+    >
+
+    <ScrollView
+        android:layout_width="334dp"
+        android:layout_height="768dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ExpandableListView
+                android:id="@+id/expandableListview_setting_navigation"
+                android:layout_width="334dp"
+                android:layout_height="768dp"
+                android:divider="@null"
+                android:background="@drawable/stock_plan_listview_item_bg"
+                />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    
+    <View
+        android:layout_width="1dp" 
+        android:layout_height="768dp"
+        android:background="#000000"
+        android:alpha="0.2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="334dp"
+        />
+
+    <FrameLayout
+        android:id="@+id/framelayout_setting"
+        android:layout_width="890dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="334dp"
+        >
+
+    </FrameLayout>
+    
+
+</RelativeLayout>

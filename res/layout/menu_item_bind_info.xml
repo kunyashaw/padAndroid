@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+     >
+      
+    
+    
+    <View
+       android:layout_width="match_parent"
+       android:layout_height="10dp" 
+       /> 
+    
+    <TextView
+        android:id="@+id/textview_menu_itme_now_binded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp" 
+        />
+    
+    
+    <View
+       android:layout_width="match_parent"
+       android:layout_height="10dp" 
+       /> 
+    
+   <!-- <TextView
+        android:id="@+id/textview_menu_item_bind_info_name_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="选择要绑定的类型："
+        android:textSize="20dp"
+        />-->
+
+	
+   
+    <ListView
+        android:id="@+id/listview_menu_item_bind_info_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarFadeDuration="100000000"
+	    android:scrollbarAlwaysDrawVerticalTrack="true"
+        >
+
+    </ListView>
+
+    <View
+       android:layout_width="match_parent"
+       android:layout_height="20dp" 
+       /> 
+  
+   
+     <!-- <TextView
+         android:id="@+id/textview_menu_item_bind_info_num_tips"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="选择服务器菜品id："
+        android:textSize="20dp"
+        />
+     
+     <EditText
+         android:id="@+id/edittext_menu_item_bind_info_num"
+         android:layout_width="match_parent" 
+         android:layout_height="wrap_content"
+         android:inputType="numberDecimal"
+         />
+     
+      <View
+       android:layout_width="match_parent"
+       android:layout_height="10dp" 
+       />  -->
+     
+</LinearLayout>

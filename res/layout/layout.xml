@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/editTextLablePrinter"
+        android:layout_marginTop="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:inputType="number"
+        android:digits="0123456789."
+        android:layout_marginStart="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存"
+        android:id="@+id/btnSaveLableAddress"
+        android:layout_alignTop="@+id/editTextLablePrinter"
+        android:layout_toEndOf="@+id/editTextLablePrinter"
+        android:layout_marginStart="41dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始标签打印"
+        android:id="@+id/buttonShowButton"
+        android:layout_below="@+id/editTextLablePrinter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="168dp" />
+
+</RelativeLayout>

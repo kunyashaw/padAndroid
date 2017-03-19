@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+     >
+    <RelativeLayout
+        android:id="@+id/rl_delivery_main_child"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+         />
+    
+    		<Button
+    		    android:id="@+id/empty_delivery_gridview"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:drawableTop="@drawable/empty_delivery"
+	        android:layout_centerInParent="true"
+	        android:background="@android:color/transparent"
+	        android:textColor="#ff565656"
+	        android:text="当前无订单"
+    		    />
+
+</RelativeLayout>

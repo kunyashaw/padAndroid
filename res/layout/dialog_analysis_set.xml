@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1024dp"
+    android:layout_height="768dp"
+    android:background="#b0000000">
+
+
+    <RelativeLayout
+        android:layout_width="695dp"
+        android:layout_height="525dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_marginLeft="164.5dp"
+        android:layout_marginTop="121.5dp"
+        android:background="@drawable/popup_window"
+        android:gravity="center_horizontal">
+
+
+        <!--*****************************dialog 标题  *****************************-->
+
+        <TextView
+            android:id="@+id/tv_dialog_analysis_set_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="39.5dp"
+            android:gravity="center"
+            android:text="设置需要统计的产品"
+            android:textColor="#ff363636"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_dialog_analysis_set_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="27.5dp"
+            android:layout_marginTop="39.5dp"
+            android:background="@drawable/closed_selector"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/rl_dialog_analysis_set_sv_parent"
+            android:layout_width="445dp"
+            android:layout_height="34dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="89.5dp"
+            android:background="@drawable/serch_78_normal">
+
+            <SearchView
+                android:id="@+id/sv_dialog_analysic_set"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="#ffffff"
+                android:queryHint="名称"
+                android:textColor="#363636"
+                android:textColorHint="#b1b1b1"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/gridview_dialog_analysis_set"
+            android:layout_width="415dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/rl_dialog_analysis_set_sv_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="135.5dp"
+
+            android:layout_marginTop="25dp"
+            android:horizontalSpacing="0dp"
+            android:numColumns="2"
+            android:scrollbarFadeDuration="10000"
+            android:verticalSpacing="35dp" />
+
+
+        <Button
+            android:id="@+id/button_dialog_analysis_set_sure"
+            android:layout_width="194dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="43dp"
+            android:layout_marginRight="117.5dp"
+            android:background="@drawable/btn_blue_solid"
+            android:paddingBottom="5dp"
+
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+
+            android:paddingTop="5dp"
+            android:text="确认" />
+
+
+        <Button
+            android:id="@+id/button_dialog_analysis_set_cancel"
+            android:layout_width="194dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="43dp"
+            android:layout_marginLeft="117.5dp"
+            android:background="@drawable/btn_red_solid"
+            android:paddingBottom="5dp"
+
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+
+            android:paddingTop="5dp"
+            android:text="取消" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

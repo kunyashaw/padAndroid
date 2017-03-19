@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bucketInfoLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+     <TextView
+        android:id="@+id/textView_item_type_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="类型" />
+
+    <Spinner
+        android:id="@+id/spinner_item_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_item_type_tips"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    
+    
+    <TextView
+        android:id="@+id/textView_item_name_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/spinner_item_type"
+        android:text="名称" />
+
+    <EditText
+        android:id="@+id/editText_item_name"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_item_name_tips"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="西红柿鸡蛋饭"
+        android:ems="10" />
+    <requestFocus />
+
+ 
+     
+    
+
+    <TextView
+        android:id="@+id/textView_item_price_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/editText_item_name"
+        android:text="菜品价格" />
+
+    <EditText
+        android:id="@+id/editText_item_price"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_item_price_tips"
+        android:hint="20"
+        android:ems="10" >
+    </EditText>
+    
+       <TextView
+        android:id="@+id/textView_distance_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText_item_price"
+        android:layout_marginLeft="10dp"
+        android:text="间距" />
+
+    <Spinner
+        android:id="@+id/spinner_item_name_price_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_distance_tips"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    
+  
+    
+          <TextView
+        android:id="@+id/textView_item_additiontal_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spinner_item_name_price_distance"
+        android:layout_marginLeft="10dp"
+        android:text="附加信息" />
+
+    <Spinner
+        android:id="@+id/spinner_item_additiontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_item_additiontal_tips"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+         />
+	
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/spinner_item_additiontal"
+        >
+       
+         <CheckBox
+        android:id="@+id/checkBox_item_new_kind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:checked="false"
+        android:text="标记为新品" />
+
+    	 <CheckBox
+         android:id="@+id/checkBox_item_whether_bind"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@id/checkBox_item_new_kind"
+         android:layout_marginLeft="10dp"
+         android:checked="false"
+         android:text="菜品绑定" />
+        
+    </RelativeLayout>
+    
+   
+
+</RelativeLayout>

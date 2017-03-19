@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlLoginMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    
+       <TextView
+        android:id="@+id/tv_login_app_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:alpha="0.6"
+        android:layout_centerHorizontal="true"
+        />
+
+
+ 	<TextView
+ 	    android:id="@+id/textview_login_title_merchant_name"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content" 
+ 	    android:layout_alignParentTop="true"
+ 	    android:layout_marginTop="49dp"
+ 	    android:layout_centerHorizontal="true"
+ 	    android:textColor="#ffffff"
+ 	    android:textSize="28sp"
+ 	    android:textStyle="bold"
+ 	    android:text=""
+ 	    />
+ 	
+ 	<TextView
+ 	     android:id="@+id/textview_login_merchant_store_name"
+ 	     android:layout_width="wrap_content"
+ 	     android:layout_height="wrap_content"
+ 	     android:layout_below="@id/textview_login_title_merchant_name"
+ 	     android:layout_marginTop="8dp"
+ 	     android:layout_centerHorizontal="true"
+ 	     android:text=""
+ 	     android:textSize="14sp"
+ 	     android:textColor="#ffffff"
+ 	     android:alpha="0.5"
+ 	    />
+    <RelativeLayout
+        android:id="@+id/rl_login_keyboard_input"
+        android:layout_width="874dp"
+	    android:layout_height="595dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/white_popup_window"
+        >
+        
+        <RelativeLayout
+            android:id="@+id/rl_login_flip_root"
+            android:layout_width="407dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" 
+            >
+            
+        
+        
+        	<RelativeLayout 
+        	    android:id="@+id/rl_login_staff_list"
+        	    android:layout_width="407dp"
+        	    android:layout_height="match_parent"
+        	    android:layout_alignParentTop="true"
+        	    android:layout_alignParentLeft="true"
+        	    >
+	        <GridView
+	            android:id="@+id/gridviewStaffList"
+	            android:layout_width="357dp"
+	            android:layout_height="460dp"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginTop="72dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_marginLeft="50dp"
+	            android:numColumns="4"
+		        android:gravity="center"
+		        android:stretchMode="columnWidth"
+		        android:horizontalSpacing="27dp"
+		        android:verticalSpacing="24dp"
+				android:scrollbarFadeDuration="100000"
+	            />
+	        
+        </RelativeLayout>
+        
+        	<RelativeLayout
+        	    android:id="@+id/rl_login_after_choose_staff"
+        	    android:layout_width="407dp"
+        	    android:layout_height="match_parent"
+        	    android:layout_alignParentTop="true"
+        	    android:layout_alignParentLeft="true" 
+        	    >
+	        <com.huofu.RestaurantOS.support.shapedImage.CircleImageView
+	            android:id="@+id/imageview_login_choose_staff"
+	            android:layout_width="111dp"
+	            android:layout_height="111dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_marginLeft="168dp"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginTop="170dp" 
+	            />
+	        
+	        <TextView
+	            android:id="@+id/textview_login_choose_staff_name"
+	            android:layout_width="111dp"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/imageview_login_choose_staff"
+	            android:layout_marginTop="15dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_marginLeft="168dp"
+	            android:gravity="center_horizontal"
+	            android:textColor="#484848"
+	            android:textSize="18sp" 
+	            />
+	        
+	        <RelativeLayout
+	            android:id="@+id/rl_login_all_staff_list_button"
+	            android:layout_width="218dp"
+	            android:layout_height="84dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_marginLeft="123.5dp"
+	            android:layout_below="@id/textview_login_choose_staff_name"
+	            android:layout_marginTop="47dp"
+	            android:background="@drawable/login_all_staff_button_selector"
+	            >
+	            
+	            
+	            
+	            	<Button
+	            		android:layout_width="wrap_content"
+	            		android:layout_height="wrap_content"
+	            		android:drawableRight="@drawable/arrow_down"
+	            		android:drawablePadding="24dp"
+	            		android:text="所有员工"
+	            		android:textSize="16sp"
+	            		android:textColor="#484848"
+	            		android:background="@android:color/transparent"
+	            		android:layout_centerVertical="true"
+	            		android:layout_centerHorizontal="true"
+	            		android:clickable="false"
+	            		android:focusable="false"
+	            		/>
+	            
+	        </RelativeLayout>
+        	    
+        	</RelativeLayout>
+        	</RelativeLayout>
+        	
+        
+	<!-- 密码输入区域 -->
+        	<RelativeLayout
+        	     android:layout_width="311dp"
+        	     android:layout_height="match_parent"
+        	     android:layout_alignParentRight="true"
+        	     android:layout_marginRight="69dp"
+        	    >
+		
+		<TextView
+		    android:id="@+id/textview_login_input_password_tips"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentTop="true"
+		    android:layout_marginTop="54dp"
+		    android:layout_centerHorizontal="true" 
+		    android:textColor="#484848"
+		    android:textSize="16sp"
+		    android:text="输入密码"
+		    />        	    
+        		
+		<RelativeLayout
+		    android:id="@+id/rl_login_input_password"
+		    android:layout_width="153dp"
+		    android:layout_height="13dp"
+		    android:layout_below="@id/textview_login_input_password_tips"
+		    android:layout_marginTop="21dp"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="79dp"
+		    >
+		    
+		    <Button
+		        android:id="@+id/imageview_login_password_no.1"
+		        android:layout_width="13dp"
+		        android:layout_height="13dp"
+		        android:background="@drawable/password_circle_empty"
+		        />
+		    
+		    <Button
+		        android:id="@+id/imageview_login_password_no.2"
+		        android:layout_width="13dp"
+		        android:layout_height="13dp"
+		        android:background="@drawable/password_circle_empty"
+		        android:layout_toRightOf="@id/imageview_login_password_no.1"
+		        android:layout_marginLeft="15dp"
+		        />
+		    
+		     <Button
+		        android:id="@+id/imageview_login_password_no.3"
+		        android:layout_width="13dp"
+		        android:layout_height="13dp"
+		        android:background="@drawable/password_circle_empty"
+		        android:layout_toRightOf="@id/imageview_login_password_no.2"
+		        android:layout_marginLeft="15dp"
+		        />
+		     
+		      <Button
+		        android:id="@+id/imageview_login_password_no.4"
+		        android:layout_width="13dp"
+		        android:layout_height="13dp"
+		        android:background="@drawable/password_circle_empty"
+		        android:layout_toRightOf="@id/imageview_login_password_no.3"
+		        android:layout_marginLeft="15dp"
+		        />
+		      
+	       <Button
+		        android:id="@+id/imageview_login_password_no.5"
+		        android:layout_width="13dp"
+		        android:layout_height="13dp"
+		        android:background="@drawable/password_circle_empty"
+		        android:layout_toRightOf="@id/imageview_login_password_no.4"
+		        android:layout_marginLeft="15dp"
+		        />
+		       
+	        <Button
+		        android:id="@+id/imageview_login_password_no.6"
+		        android:layout_width="13dp"
+		        android:layout_height="13dp"
+		        android:background="@drawable/password_circle_empty"
+		        android:layout_toRightOf="@id/imageview_login_password_no.5"
+		        android:layout_marginLeft="15dp"
+		        />
+		    
+		</RelativeLayout>
+		
+		 <!-- 密码 -->
+		        <Button
+		            android:id="@+id/button_login_keyboard_number_1"
+		            android:layout_width="101dp"
+		            android:layout_height="101dp"
+		            android:background="@drawable/number_123_button_selector" 
+		            android:layout_alignParentLeft="true"
+		            android:layout_below="@id/rl_login_input_password"
+		            android:layout_marginTop="32dp"
+		            android:text="1"
+		            android:textSize="32sp"
+		            android:textColor="#484848"
+		            android:onClick="loginKeyBoardNumClickListner"
+		            />
+		        
+	          	<Button
+		            android:id="@+id/button_login_keyboard_number_2"
+		            android:layout_width="101dp"
+		            android:layout_height="101dp"
+		            android:background="@drawable/number_123_button_selector" 
+		            android:layout_toRightOf="@id/button_login_keyboard_number_1"
+		            android:layout_marginLeft="4dp"
+		            android:layout_below="@id/rl_login_input_password"
+		            android:layout_marginTop="32dp"
+		            android:text="2"
+		            android:textSize="32sp"
+		            android:textColor="#484848"
+		            android:onClick="loginKeyBoardNumClickListner"
+		            />
+	          	
+          	  	<Button
+		            android:id="@+id/button_login_keyboard_number_3"
+		            android:layout_width="101dp"
+		            android:layout_height="101dp"
+		            android:background="@drawable/number_123_button_selector" 
+		            android:layout_toRightOf="@id/button_login_keyboard_number_2"
+		            android:layout_marginLeft="4dp"
+		            android:layout_below="@id/rl_login_input_password"
+		            android:layout_marginTop="32dp"
+		            android:text="3"
+		            android:textSize="32sp"
+		            android:textColor="#484848"
+		            android:onClick="loginKeyBoardNumClickListner"
+		            />
+          	  	
+      	  	       <Button
+		            android:id="@+id/button_login_keyboard_number_4"
+		            android:layout_width="101dp"
+		            android:layout_height="101dp"
+		            android:background="@drawable/number_456_button_selector" 
+		            android:layout_alignParentLeft="true"
+		            android:layout_below="@id/rl_login_input_password"
+		            android:layout_marginTop="133dp"
+		            android:text="4"
+		            android:textSize="32sp"
+		            android:textColor="#484848"
+		            android:onClick="loginKeyBoardNumClickListner"
+		            />
+		        
+	          	<Button
+		            android:id="@+id/button_login_keyboard_number_5"
+		            android:layout_width="101dp"
+		            android:layout_height="101dp"
+		            android:background="@drawable/number_456_button_selector" 
+		            android:layout_toRightOf="@id/button_login_keyboard_number_4"
+		            android:layout_marginLeft="4dp"
+		            android:layout_below="@id/rl_login_input_password"
+		            android:layout_marginTop="133dp"
+		            android:text="5"
+		            android:textSize="32sp"
+		            android:textColor="#484848"
+		            android:onClick="loginKeyBoardNumClickListner"
+		            />
+	          	
+          	  	<Button
+		            android:id="@+id/button_login_keyboard_number_6"
+		            android:layout_width="101dp"
+		            android:layout_height="101dp"
+		            android:background="@drawable/number_456_button_selector" 
+		            android:layout_toRightOf="@id/button_login_keyboard_number_5"
+		            android:layout_marginLeft="4dp"
+		            android:layout_below="@id/rl_login_input_password"
+		            android:layout_marginTop="133dp"
+		            android:text="6"
+		            android:textSize="32sp"
+		            android:textColor="#484848"
+		            android:onClick="loginKeyBoardNumClickListner"
+		            />
+          	  	
+       	  	       <Button
+		            android:id="@+id/button_login_keyboard_number_7"
+		            android:layout_width="101dp"
+		            android:layout_height="101dp"
+		            android:background="@drawable/number_789_button_selector" 
+		            android:layout_alignParentLeft="true"
+		            android:layout_below="@id/rl_login_input_password"
+		            android:layout_marginTop="234dp"
+		            android:text="7"
+		            android:textSize="32sp"
+		            android:textColor="#484848"
+		            android:onClick="loginKeyBoardNumClickListner"
+		            />
+		        
+	          	<Button
+		            android:id="@+id/button_login_keyboard_number_8"
+		            android:layout_width="101dp"
+		            android:layout_height="101dp"
+		            android:background="@drawable/number_789_button_selector" 
+		            android:layout_toRightOf="@id/button_login_keyboard_number_7"
+		            android:layout_marginLeft="4dp"
+		            android:layout_below="@id/rl_login_input_password"
+		            android:layout_marginTop="234dp"
+		            android:text="8"
+		            android:textSize="32sp"
+		            android:textColor="#484848"
+		            android:onClick="loginKeyBoardNumClickListner"
+		            />
+	          	
+          	  	<Button
+		            android:id="@+id/button_login_keyboard_number_9"
+		            android:layout_width="101dp"
+		            android:layout_height="101dp"
+		            android:background="@drawable/number_789_button_selector" 
+		            android:layout_toRightOf="@id/button_login_keyboard_number_8"
+		            android:layout_marginLeft="4dp"
+		            android:layout_below="@id/rl_login_input_password"
+		            android:layout_marginTop="234dp"
+		            android:text="9"
+		            android:textSize="32sp"
+		            android:textColor="#484848"
+		            android:onClick="loginKeyBoardNumClickListner"
+		            />
+		        
+        	  	  	<Button
+		            android:id="@+id/button_login_keyboard_number_0"
+		            android:layout_width="101dp"
+		            android:layout_height="101dp"
+		            android:background="@drawable/number_0_button_selector" 
+		            android:layout_alignParentLeft="true"
+		            android:layout_marginLeft="105dp"
+		            android:layout_below="@id/rl_login_input_password"
+		            android:layout_marginTop="335dp"
+		            android:text="0"
+		            android:textSize="32sp"
+		            android:textColor="#484848"
+		            android:onClick="loginKeyBoardNumClickListner"
+		            />
+	          	
+          	  	<Button
+		            android:id="@+id/button_login_keyboard_delete"
+		            android:layout_width="101dp"
+		            android:layout_height="101dp"
+		            android:background="@android:color/transparent" 
+		            android:layout_toRightOf="@id/button_login_keyboard_number_0"
+		            android:layout_marginLeft="4dp"
+		            android:layout_below="@id/rl_login_input_password"
+		            android:layout_marginTop="335dp"
+		            android:text="删除"
+		            android:textSize="18sp"
+		            android:textColor="#484848"
+		            android:onClick="loginKeyBoardDeleteClickListner"
+		            />
+		
+        	</RelativeLayout>
+        
+        	<RelativeLayout
+        	    android:id="@+id/rl_switch_login_way"
+        	    android:layout_width="300dp"
+        	    android:layout_height="50dp"
+        	    android:layout_alignParentBottom="true"
+        	    android:layout_centerHorizontal="true" 
+        	    >
+        	    <Button
+		        android:id="@+id/button_switch_login_way"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentBottom="true"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginBottom="32dp" 
+		        
+		        android:background="@android:color/transparent"
+		        
+		        android:drawableRight="@drawable/arrow_right"
+		        android:drawablePadding="13dp"
+		        
+		        android:textSize="16sp"
+		        android:textColor="#565656"
+		        android:text="微信扫码登录"/>
+        	    
+        	</RelativeLayout>	
+        	 
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_login_qrcode_scan"
+        android:layout_width="874dp"
+	    android:layout_height="595dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/white_popup_window"
+        > 
+
+        <!-- android:layout_alignParentLeft="true"
+        android:layout_marginLeft="75dp" -->
+        
+        
+        <!-- 扫码登录界面 -->
+        
+        <RelativeLayout
+           	 android:id="@+id/rl_login_qrcode_scan_ready"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+            >
+          	
+            <RelativeLayout
+                android:id="@+id/rl_login_qrcode_bg"
+                android:layout_width="185dp"
+                android:layout_height="185dp"
+                android:background="@drawable/qrcode_bg"
+                android:layout_alignParentTop="true"
+		        android:layout_marginTop="173dp"
+		        android:layout_centerHorizontal="true" 
+                >
+                
+                   <ImageView
+		            android:id="@+id/imageview_login_qrcode_scan"
+		            android:layout_width="180dp"
+		            android:layout_height="180dp"
+		           	android:layout_centerInParent="true"
+		            android:layout_centerHorizontal="true"/>
+                
+            </RelativeLayout>	
+            
+            <TextView
+               android:id="@+id/textview_qrcode_expired"
+               android:layout_width="wrap_content" 
+               android:layout_height="wrap_content"
+               android:textSize="16sp"
+               android:textColor="#898989"
+               android:text="请使用微信扫描登录"
+               android:layout_below="@id/rl_login_qrcode_bg"
+               android:layout_marginTop="25dp"
+               android:layout_centerHorizontal="true"/>
+            
+        
+            
+          
+           	<RelativeLayout
+	        	    android:id="@+id/rl_switch_login_keyboard_way"
+	        	    android:layout_width="300dp"
+	        	    android:layout_height="100dp"
+	        	    android:layout_alignParentBottom="true"
+	        	    android:layout_centerHorizontal="true" >
+	           <Button
+	               android:id="@+id/button_switch_login_keyboard_way"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content" 
+	               android:textSize="16sp"
+	               android:textColor="#565656"
+	               android:text="使用密码登录"
+	               android:drawableLeft="@drawable/arrow_left"
+	               android:drawablePadding="13dp"
+	               android:layout_alignParentBottom="true"
+	               android:layout_marginBottom="32dp"
+	               android:layout_centerHorizontal="true"
+	               android:background="@android:color/transparent"
+	               />
+           </RelativeLayout>
+        </RelativeLayout>
+        
+        <!-- 扫码登录结果 -->
+        <RelativeLayout
+            android:id="@+id/rl_login_qrcode_scan_waiting_user_cmd"
+            android:layout_width="match_parent" 
+            android:layout_height="match_parent"
+            >
+           
+            <com.huofu.RestaurantOS.support.shapedImage.CircleImageView
+                android:id="@+id/imageview_login_qrcode_scan_staff_head_photo"
+                android:layout_width="111dp"
+                android:layout_height="111dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="185dp"
+                android:layout_centerHorizontal="true" 
+                />
+            
+            <TextView
+                android:id="@+id/textview_login_qrcan_staff_name"
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#484848"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/imageview_login_qrcode_scan_staff_head_photo"
+                android:layout_marginTop="15dp"
+                />
+            
+            
+            <TextView
+            		android:layout_width="wrap_content"     
+            		android:layout_height="wrap_content"
+            		android:textSize="16sp"
+            		android:textColor="#898989"
+            		android:text="扫描成功，请在手机点击确认登录"
+            		android:layout_alignParentTop="true"
+            		android:layout_marginTop="379dp"
+            		android:layout_centerHorizontal="true"
+                />
+            
+            <Button
+                android:id="@+id/button_login_cancel_qrscan_login"
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="32dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="16sp" 
+                android:textColor="#565665"
+                android:text="输入密码登录"
+                android:drawableLeft="@drawable/arrow_left"
+                android:drawablePadding="13dp"
+                android:background="@android:color/transparent"
+                />
+            
+        </RelativeLayout>
+        
+        
+        
+    </RelativeLayout>
+    
+
+</RelativeLayout>

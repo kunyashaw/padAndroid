@@ -1,0 +1,238 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    
+
+        
+    <!-- *************							设置淡入淡出效果				 *************** -->
+    
+      <style name="funcSplashSetDialog" parent="@android:style/Theme.Dialog">
+		<item name="android:backgroundDimEnabled">true</item> 
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+    </style>
+
+      
+      
+    <style name="funcSplashSetAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+ 	</style>
+    
+    
+     <style name="ChoosePackagedOrEatinDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:background">#ffffffff</item> <!-- 设置自定义布局的背景透明 -->
+		<item name="android:backgroundDimEnabled">false</item>
+		<item name="android:windowBackground">@android:color/transparent</item>  <!-- 设置window背景透明，也就是去边框 -->
+		<item name="android:windowTitleStyle">@style/dialog_title_style</item> 
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+    </style>
+    
+     <style name="dialog_title_style" parent="android:Widget.TextView">
+	    <item name="android:background">@android:color/transparent</item>
+	    <item name="android:padding">10dp</item>
+	</style>
+    
+     
+<!-- *************							设置small_2_big效果				 *************** -->
+    
+      <style name="smallToBig" parent="@android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item> <!-- 设置自定义布局的背景透明 -->
+		<item name="android:windowBackground">@android:color/transparent</item>  <!-- 设置window背景透明，也就是去边框 -->
+		<item name="android:backgroundDimEnabled">true</item> 
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+    </style>
+
+    
+       <style name="smallToBigAnimation">
+        <item name="android:windowEnterAnimation">@anim/small_2_big</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+     
+     
+<!-- *************				设置从左到右效果				 *************** -->
+    
+      <style name="leftToRight" parent="@android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item> <!-- 设置自定义布局的背景透明 -->
+		<item name="android:windowBackground">@android:color/transparent</item>  <!-- 设置window背景透明，也就是去边框 -->
+		<item name="android:backgroundDimEnabled">true</item> 
+        <item name="android:windowAnimationStyle">@style/leftToRoghtAnimation</item>
+    </style>
+
+    
+       <style name="leftToRoghtAnimation">
+        <item name="android:windowEnterAnimation">@anim/from_left_to_right_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>       
+       
+       
+    
+    <!-- *************							设置上入下出效果				 *************** -->
+    
+      <style name="PauseDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item> <!-- 设置自定义布局的背景透明 -->
+		<item name="android:windowBackground">@android:color/transparent</item>  <!-- 设置window背景透明，也就是去边框 -->
+		<item name="android:backgroundDimEnabled">true</item> 
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+    </style>
+
+    
+       <style name="PauseDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/from_up_down_in</item>
+        <item name="android:windowExitAnimation">@anim/from_down_up_out</item>
+    </style>
+      
+    
+    
+     <!-- *************							设置授权界面淡入淡出效果				 *************** -->
+    
+         <style name="AuthDialog" parent="@android:style/Theme.Dialog">
+         <item name="android:background">#00000000</item> <!-- 设置自定义布局的背景透明 -->
+		<item name="android:windowBackground">@android:color/transparent</item>  <!-- 设置window背景透明，也就是去边框 -->
+		<item name="android:backgroundDimEnabled">false</item> 
+        
+    </style>
+
+         <style name="NoTitleBlackBackgroundDialog" parent="@android:style/Theme.Dialog">
+          <item name="android:background">#00000000</item> <!-- 设置自定义布局的背景透明 -->
+		<item name="android:windowBackground">@android:color/transparent</item>  <!-- 设置window背景透明，也就是去边框 -->
+		<item name="android:backgroundDimEnabled">false</item> 
+        
+    </style>
+         
+         
+         <!-- <item name="android:windowAnimationStyle">@style/AutoDialogAnimation</item> -->
+         
+    <style name="AutoDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+    
+    <style name="Small2BigAnimation">
+        <item name="android:windowEnterAnimation">@anim/small_2_big</item>
+        <item name="android:windowExitAnimation">@anim/big_2_small</item>
+    </style>
+
+    <!-- *************							设置震动弹出效果				 *************** -->
+
+    <style name="FromDownToUpAnimation">
+        <item name="android:windowEnterAnimation">@anim/from_down_up_in</item>
+        <item name="android:windowExitAnimation">@anim/from_up_down_out</item>
+    </style>
+
+
+  <!-- *************							设置震动弹出效果				 *************** -->
+ 
+    
+    <style name="Shake300Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item> <!-- 设置自定义布局的背景透明 -->
+		<item name="android:windowBackground">@android:color/transparent</item>  <!-- 设置window背景透明，也就是去边框 -->
+		<item name="android:backgroundDimEnabled">true</item> 
+        <item name="android:windowAnimationStyle">@style/ShakeDialog300Animation</item>
+    </style>
+    
+      <style name="Shake500Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item> <!-- 设置自定义布局的背景透明 -->
+		<item name="android:windowBackground">@android:color/transparent</item>  <!-- 设置window背景透明，也就是去边框 -->
+		<item name="android:backgroundDimEnabled">true</item> 
+        <item name="android:windowAnimationStyle">@style/ShakeDialog500Animation</item>
+    </style>
+
+    <style name="ShakeDialog300Animation">
+        <item name="android:windowEnterAnimation">@anim/shake_300</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+    
+      <style name="ShakeDialog500Animation">
+        <item name="android:windowEnterAnimation">@anim/shake_500</item>
+        <item name="android:windowExitAnimation">@anim/from_down_up_out</item>
+    </style>
+    
+    
+    
+<!-- *************							设置震标题栏				 *************** -->
+    <!-- <style name="MyAppBaseTheme" parent="android:Theme.Holo"> -->
+    	<style name="MyAppBaseTheme" parent="android:Theme.Holo">
+        API 14 theme customizations can go here.
+         <item name="android:actionBarStyle">@style/my_actionbar_style</item>
+         <item name="android:windowTranslucentStatus">true</item>
+    	    <item name="android:windowTranslucentNavigation">true</item>
+    	    <item name="android:fitsSystemWindows">true</item>
+    	    <item name="android:clipToPadding">true</item>
+    </style>
+    
+    
+     
+    <style name="my_actionbar_style" parent="@android:style/Widget.Holo.Light.ActionBar">
+        	<item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+        	<item name="android:background">#000000</item>
+        	<item name="android:spinnerItemStyle">@style/spinnerItemStyle</item>
+   	        <item name="android:spinnerDropDownItemStyle">@style/spinnerItemStyle</item>
+    </style>
+
+    
+     <style name="spinnerItemStyle" parent="@android:style/Widget.Holo.TextView.SpinnerItem">
+       <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+       <item name="android:gravity">center_vertical</item>   
+    </style>
+    
+    
+    <style name="MyActionBarTitleText" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">  
+        <item name="android:textColor">#ffffff</item>  
+    </style>  
+    
+    
+     <declare-styleable name="SlipButton">
+        <attr name="bg" format="reference"/>
+        <attr name="slipImg" format="reference"/>
+        <attr name="slipOn" format="boolean"></attr>
+    </declare-styleable>
+    
+     
+     <style name="DialogWindowTitle">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+    
+       <style name="dialog_tran" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+    
+    <style name="dialog_untran" parent="dialog_tran">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    
+    <style name="dialog_btn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:background">@drawable/btn_selector</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

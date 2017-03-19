@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_listview_all_push"
+    android:layout_width="266dp"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    >
+
+    <LinearLayout
+        android:id="@+id/bottom_wrapper"
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        android:background="#4385f6"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tvSwipeLayoutBottomTips"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:background="#4385f6"
+            android:gravity="center"
+            android:text="出餐不叫号"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_expandablelistview_surfaceview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/btn_listview_all_serinal_num"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="18dp"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:gravity="top|left"
+            android:textColor="#363636"
+            android:textSize="29sp" />
+        <!-- android:layout_height="30dp" -->
+        <!-- android:textSize="19sp" -->
+
+        <Button
+            android:id="@+id/btn_listview_all_whether_packaged"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/btn_listview_all_serinal_num"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:gravity="top|left"
+            android:textColor="#4385f6"
+            android:textSize="17sp" />
+        <!-- android:layout_marginTop="0dp" -->
+
+        <Button
+            android:id="@+id/btn_listview_all_chargeItem_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="82dp"
+            android:layout_marginTop="18dp"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:gravity="left|top"
+            android:lineSpacingExtra="10dp"
+            android:textColor="#363636"
+            android:textSize="29sp" />
+        <!-- android:textSize="19sp" -->
+
+        <View
+            android:id="@+id/view_listview_all_push_rl_same"
+            android:layout_width="245dp"
+            android:layout_height="0.5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/btn_listview_all_chargeItem_name"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="18dp"
+            android:background="#dddddd"
+            android:clickable="false"
+            android:visibility="invisible" />
+
+
+        <View
+            android:id="@+id/view_listview_all_push_rl_not_same"
+            android:layout_width="266dp"
+            android:layout_height="4dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/btn_listview_all_chargeItem_name"
+            android:layout_marginTop="18dp"
+            android:background="#47505a"
+            android:clickable="false"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+
+</com.daimajia.swipe.SwipeLayout>
+ 
+  

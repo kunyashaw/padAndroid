@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="695dp"
+    android:layout_height="60dp"
+    android:background="@color/Constrast"
+    >
+
+    <TextView
+        android:id="@+id/textview_listview_stock_supply_closed_modify_popupwidnow_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="60dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/Forceful"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="test"
+        />
+
+    <Button
+        android:id="@+id/btn_listview_stock_supply_closed_modify_popupwidnow_item_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/arrow_right"
+        android:drawablePadding="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/Forceful"
+        android:textSize="18sp"
+        android:background="@android:color/transparent"
+        />
+    <View
+        android:layout_width="665dp"
+        android:layout_height="0.5dp"
+        android:background="@color/Pale"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        />
+
+</RelativeLayout>

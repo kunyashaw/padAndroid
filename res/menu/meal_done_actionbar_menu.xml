@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      xmlns:tools2="http://schemas.android.com/tools2"
+      tools:context="com.ShanFuBao.SmartCall.utils.new_menu_action_provider"
+      tools2:context="com.ShanFuBao.SmartCall.utils.new_menu_action_provider_menu_type"  > 
+
+    
+       <item
+        android:id="@+id/meal_push"
+        android:actionViewClass="android.widget.Button"
+        android:title="出餐：" 
+        android:showAsAction="always"
+        />
+    
+      
+     <item
+        android:id="@+id/meal_push_history"
+        android:showAsAction="always"
+        android:actionViewClass="android.widget.Button"
+        android:title="出餐历史" 
+        />
+     
+         <item
+        android:id="@+id/meal_empty_0"
+        android:showAsAction="always"
+        android:actionViewClass="android.widget.Button"
+        android:title="          " 
+        />
+         
+     <item
+        android:id="@+id/meal_empty_1"
+        android:showAsAction="always"
+        android:actionViewClass="android.widget.Button"
+        android:title="          " 
+        />
+           
+      <item
+        android:id="@+id/meal_empty_2"
+        android:showAsAction="always"
+        android:actionViewClass="android.widget.Button"
+        android:title="          " 
+        />
+    
+      
+       <item
+        android:id="@+id/meal_empty_3"
+        android:showAsAction="always"
+        android:actionViewClass="android.widget.Button"
+        android:title="          " 
+        />
+       
+        <item
+        android:id="@+id/meal_empty_4"
+        android:showAsAction="always"
+        android:actionViewClass="android.widget.Button"
+        android:title="          " 
+        />
+        
+         <item
+        android:id="@+id/meal_empty_5"
+        android:showAsAction="always"
+        android:actionViewClass="android.widget.Button"
+        android:title="          " 
+        />
+
+</menu>

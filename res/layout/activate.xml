@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_activate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    
+        <TextView
+        android:id="@+id/tv_app_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:alpha="0.6"
+        android:layout_centerHorizontal="true"
+        />
+    
+ <!--    <TextView
+ 	    android:id="@+id/textview_activate_title"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content" 
+ 	    android:layout_alignParentTop="true"
+ 	    android:layout_marginTop="49dp"
+ 	    android:layout_centerHorizontal="true"
+ 	    android:textColor="#ffffff"
+ 	    android:textSize="28sp"
+ 	    android:textStyle="bold"
+ 	    android:text="五味，放心吃"
+ 	    />
+ 	
+ 	<TextView
+ 	     android:id="@+id/textview_activate_version"
+ 	     android:layout_width="wrap_content"
+ 	     android:layout_height="wrap_content"
+ 	     android:layout_below="@id/textview_activate_title"
+ 	     android:layout_marginTop="8dp"
+ 	     android:layout_centerHorizontal="true"
+ 	     android:text="火付云收银台 V1.0"
+ 	     android:textSize="14sp"
+ 	     android:textColor="#ffffff"
+ 	     android:alpha="0.5"
+ 	    /> -->
+    <RelativeLayout
+        android:id="@+id/rl_activate_main"
+        android:layout_width="704dp"
+	    android:layout_height="494dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="163dp"
+        android:background="@drawable/white_popup_window"
+        >
+        
+        <RelativeLayout
+            android:id="@+id/rl_activate_code_input"
+            android:layout_width="match_parent" 
+            android:layout_height="match_parent"
+            >
+            <!-- android:background="@android:color/white" -->
+            
+            <RelativeLayout
+                android:id="@+id/rl_input_tips_and_et"
+                android:layout_width="435dp"
+                android:layout_height="50dp" 
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="125dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/input"
+                >
+                
+                <!-- android:background="@drawable/input" -->
+	            <TextView
+			        android:id="@+id/textviewActivateTips"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_centerVertical="true"
+			        android:layout_marginLeft="10dp"
+			        android:textSize="18sp"
+			        android:textColor="#565656"
+			        android:text="授权码" 
+			        />
+	        
+				<EditText
+			       android:id="@+id/editTextActivateCode"
+			       android:layout_width="450dp"
+			       android:layout_height="50dp"
+			       android:layout_alignParentLeft="true"
+			       android:layout_marginLeft="212dp"
+			       android:layout_centerVertical="true"
+			       android:background="@android:color/transparent"
+			       android:singleLine="true"
+			       android:gravity="center"
+			       android:textCursorDrawable="@null"
+			       
+			       android:textSize="18sp"
+			       android:hint=" xxxx-xxxx-xxxx-xxxx"
+			       android:textColorHint="#b1b1b1"
+			       android:textColor="#363636"
+				   android:inputType=""
+			       android:maxLength="19"
+			       android:ems="10" />
+			</RelativeLayout>
+			
+			<Button
+			    android:id="@+id/buttonActivate"
+			    android:layout_width="242dp" 
+			    android:layout_height="44dp"
+			    android:layout_below="@id/rl_input_tips_and_et"
+			    android:layout_marginTop="31dp"
+			    android:layout_alignParentLeft="true"
+			    android:layout_marginLeft="212dp"
+			    android:background="@drawable/btn_blue_solid"
+			    android:text= "激活"
+			    />
+	
+			<RelativeLayout
+	        	    android:id="@+id/rl_switch_activate_qrcode_way"
+	        	    android:layout_width="300dp"
+	        	    android:layout_height="100dp"
+	        	    android:layout_alignParentBottom="true"
+	        	    android:layout_centerHorizontal="true" >
+			
+					<Button 
+					    android:id="@+id/button_activate_switch_to_qrscan"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content" 
+					    android:layout_centerHorizontal="true"
+					    android:drawableRight="@drawable/arrow_right"
+					    android:drawablePadding="13dp"
+					    android:layout_alignParentBottom="true"
+					    android:layout_marginBottom="32dp"
+					    android:textSize="15sp"
+					    android:textColor="#565656"
+					    android:background="@android:color/transparent"
+					    android:text="微信扫码激活"
+					    />
+			
+        </RelativeLayout>    
+        </RelativeLayout>
+        
+        
+    <RelativeLayout
+        android:id="@+id/rl_activate_qrcode_scan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        > 
+       
+        
+        <!-- 扫码登录界面 -->
+        
+        <RelativeLayout
+             android:id="@+id/rl_activate_qrcode_scan_ready"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+            >
+			
+              <RelativeLayout
+                android:id="@+id/rl_activate_qrcode_bg"
+                android:layout_width="183dp"
+                android:layout_height="183dp"
+                android:background="@drawable/qrcode_bg"
+                android:layout_alignParentTop="true"
+		        android:layout_marginTop="125dp"
+		        android:layout_centerHorizontal="true" 
+                >
+                    <ImageView
+		            android:id="@+id/imageview_activate_qrcode_scan"
+		            android:layout_width="180dp"
+		            android:layout_height="180dp" 
+		          	android:layout_centerInParent="true"
+		            /> 
+                
+            </RelativeLayout>		
+            
+            
+         
+            
+           <TextView
+               android:id="@+id/textview_activate_status"
+               android:layout_width="wrap_content" 
+               android:layout_height="wrap_content"
+               android:textSize="16sp"
+               android:textColor="#898989"
+               android:text="请使用微信扫码获取授权"
+               android:layout_below="@id/rl_activate_qrcode_bg"
+               android:layout_marginTop="25dp"
+               android:layout_centerHorizontal="true"
+               />
+           
+           	<RelativeLayout
+	        	    android:id="@+id/rl_switch_activate_keyboard_way"
+	        	    android:layout_width="300dp"
+	        	    android:layout_height="100dp"
+	        	    android:layout_alignParentBottom="true"
+	        	    android:layout_centerHorizontal="true" >
+	           
+	           <Button
+	               android:id="@+id/button_switch_acitvate_keyboard_way"
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content" 
+	               android:textSize="16sp"
+	               android:textColor="#565656"
+	               android:text="输入授权码激活"
+	               android:drawableLeft="@drawable/arrow_left"
+	               android:drawablePadding="13dp"
+	               android:layout_alignParentBottom="true"
+	               android:layout_marginBottom="32dp"
+	               android:layout_centerHorizontal="true"
+	               android:background="@android:color/transparent"
+	               />
+	           </RelativeLayout>
+        </RelativeLayout>
+        
+        </RelativeLayout>
+        
+        
+    </RelativeLayout>
+    
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="266dp"
+    android:layout_height="59dp"
+     >
+    
+    <TextView
+        android:id="@+id/tv_expandable_listview_group_item"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp" 
+        android:background="#47505a"
+        android:textColor="#88ffffff"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        />
+    
+    <TextView
+        android:id="@+id/tv_expandable_listview_group_item_badget"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/expandablelistview_item_badget_background"
+        android:layout_toRightOf="@id/tv_expandable_listview_group_item"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        />
+    
+    <View
+        android:layout_width="266dp"
+        android:layout_height="1dp"
+        android:background="#353b43"
+        />
+    
+    
+
+</RelativeLayout>

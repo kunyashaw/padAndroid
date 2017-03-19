@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1024dp"
+    android:layout_height="768dp"
+    android:background="#b0000000" >
+
+
+		<RelativeLayout
+		   android:layout_width="695dp"
+	    		android:layout_height="525dp"
+	    		android:background="@drawable/popup_window"
+	    		android:layout_gravity="center|center_horizontal"
+	    		android:gravity="center_horizontal"
+	    		android:layout_alignParentLeft="true"
+	    		android:layout_marginLeft="164.5dp"
+	    		android:layout_alignParentTop="true"
+	    		android:layout_marginTop="121.5dp"
+		     >
+   
+ <!--*****************************dialog 标题  *****************************-->
+
+        <TextView
+            android:id="@+id/tv_dialog_long_click_takeup_title"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:text=""
+	        android:textColor="#ff363636"
+	        android:textSize="18sp"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginTop="39.5dp"
+	        android:layout_centerHorizontal="true"
+	        android:gravity="center"/>
+    
+	    <Button
+	        android:id="@+id/button_dialog_long_click_takeup_close"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:background="@drawable/closed_selector"
+	        android:layout_gravity="center_vertical"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginTop="39.5dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="27.5dp"
+	        />
+		
+	    
+	    
+	    <GridView
+	        android:id="@+id/gridview_dialog_long_click_takeup"
+	        android:layout_width="415dp"
+	        android:layout_height="275dp" 
+	        android:layout_alignParentTop="true"
+	        android:layout_marginTop="102.5dp"
+	        android:layout_centerHorizontal="true"
+	        android:horizontalSpacing="0dp"
+	        android:verticalSpacing="35dp"
+	        android:numColumns="2"
+	        android:scrollbarFadeDuration="100000"
+	       />
+   
+        
+        <Button
+            android:id="@+id/button_dialog_long_click_takeu_push_all"
+            android:layout_width="194dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_blue_solid"
+            android:text="全部出餐"
+            android:paddingBottom="5dp"
+        		android:paddingLeft="20dp"
+        		android:paddingRight="20dp"
+        		android:paddingTop="5dp"
+        		
+        		android:layout_alignParentBottom="true"
+			android:layout_marginBottom="43dp"
+			        
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="117.5dp"
+            />
+         
+         <Button
+            android:id="@+id/button_dialog_long_click_takeup_push"
+             android:layout_width="194dp"
+	        android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_blue_solid"
+            android:text="出餐"
+            android:paddingBottom="5dp"
+        		android:paddingLeft="20dp"
+        		android:paddingRight="20dp"
+        		android:paddingTop="5dp"
+	
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="43dp"
+			        
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="117.5dp"
+            />
+         
+          </RelativeLayout>
+</RelativeLayout>

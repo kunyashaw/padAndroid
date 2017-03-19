@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+     >
+    
+    <com.huofu.RestaurantOS.support.shapedImage.CircleImageView
+		android:id="@+id/button_gridview_item"
+	    android:layout_width="69dp"
+	    android:layout_height="69dp"
+	    app:shape="circle"
+	    android:scaleType="centerCrop" 
+		android:focusable="false"
+        android:clickable="false"
+        />
+    
+    
+     <TextView
+        android:id="@+id/tv_login_staff_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_gridview_item"
+        android:layout_marginTop="12dp"
+        android:textSize="14sp"
+        android:textColor="#363636"
+        android:text="button"
+        android:layout_centerHorizontal="true"
+        
+        android:focusable="false"
+        android:clickable="false"
+        android:gravity="center"
+        />
+    
+</RelativeLayout>
+
+

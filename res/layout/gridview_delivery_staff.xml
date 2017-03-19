@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1024dp"
+	android:layout_height="match_parent"
+    android:background="#b0000000"
+	 >
+    
+    
+    <RelativeLayout
+        android:layout_width="600dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="#f8f8f8">
+    
+    
+    	<RelativeLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="44dp"
+    	    android:layout_alignParentTop="true"
+    	    android:background="#ffffff"
+    	    >
+    	    
+    	    <Button
+    	        android:id="@+id/btn_gridview_delivery_staff_dispatch_cancel"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_centerVertical="true"
+    	        android:layout_alignParentLeft="true"
+    	        android:layout_marginLeft="20dp"
+    	        android:background="@android:color/transparent"
+    	        android:text="取消"
+    	        android:textSize="16dp"
+    	        android:textColor="#4385f6" 
+    	        />
+    	    
+    	    <TextView
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:text="选择送餐人员"
+    	        android:textSize="16dp"
+    	        android:textColor="#565656"
+    	        android:layout_centerHorizontal="true"
+    	        android:layout_centerVertical="true"
+    	        />
+    	    
+    	</RelativeLayout>
+
+    		<GridView
+            android:id="@+id/gridviewDeliveryStaffList"
+            android:layout_width="600dp"
+            android:layout_height="match_parent"
+            android:numColumns="5"
+	        android:gravity="center"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginTop="100dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="40dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="40dp"
+	        android:stretchMode="columnWidth"
+	        android:horizontalSpacing="27dp"
+	        android:verticalSpacing="24dp"
+	        android:layout_centerHorizontal="true"
+	        />
+    </RelativeLayout>
+    
+</RelativeLayout>

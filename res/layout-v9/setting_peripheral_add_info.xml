@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="630dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_add_mp_peripheral_name"
+        android:layout_width="630dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/tv_setting_mp_perohperal_add_info_name_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:gravity="center_vertical"
+            android:text="打印机名称"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_setting_mp_peripheral_add_info_name"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:background="@android:color/transparent"
+            android:cursorVisible="true"
+            android:focusable="true"
+            android:gravity="bottom|center_horizontal"
+            android:textColor="#898989"
+            android:textColorHint="#30898989"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/et_setting_mp_peripheral_add_info_name"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:background="#e1c3bc" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_add_mp_peripheral_ip"
+        android:layout_width="630dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rl_setting_add_mp_peripheral_name"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/tv_setting_add_mp_peripheral_info_ip_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:gravity="center_vertical"
+            android:text="打印机IP"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_setting_add_mp_peripheral_info_ip"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:background="@android:color/transparent"
+            android:cursorVisible="true"
+            android:digits="0123456789."
+            android:focusable="true"
+            android:gravity="bottom|center_horizontal"
+            android:inputType="number"
+            android:textColor="#898989"
+            android:textColorHint="#30898989"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/et_setting_add_mp_peripheral_info_ip"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="#e1c3bc" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

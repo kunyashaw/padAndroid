@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="350dp">
+
+<!--    <TextView
+        android:id="@+id/tvCalendarViewTips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请选择日期和营业时间段"
+        android:textColor="@color/Constrast"
+        android:gravity="center"
+        android:textScaleX="20dp"
+        />-->
+    <CalendarView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        />
+    <com.huofu.RestaurantOS.ui.pannel.delivery.HorizontalListView
+        android:id="@+id/horizntalScrollview_timebucket_list"
+        android:layout_width="500dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/cv"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="695dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center|center_horizontal"
+    android:layout_marginLeft="164.5dp"
+    android:background="@color/BackgroudColor"
+    >
+
+
+    <RelativeLayout
+
+        android:layout_width="695dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+
+        android:gravity="center_horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_modify_stock_supply_closed_title"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/Constrast">
+
+            <TextView
+                android:id="@+id/textview_stock_supply_modify_close_now_product"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/Forceful"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button_stock_supplu_modify_closed"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40sp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="关闭"
+                android:textColor="@color/Blue"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_modify_stock_supply_closed_open_inventory"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/rl_modify_stock_supply_closed_title"
+            android:layout_marginTop="28dp"
+            android:background="@color/Constrast">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40dp"
+                android:gravity="center"
+                android:text="开启库存"
+                android:textColor="@color/Forceful"
+                android:textSize="18sp" />
+
+            <com.huofu.RestaurantOS.widget.toggleButton.zcw.togglebutton.ToggleButton
+                android:id="@+id/toggleButton_stock_supply_open_inventory"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="35dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_stock_supply_open_periodec_inventory"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/rl_modify_stock_supply_closed_open_inventory"
+            android:layout_marginTop="28dp"
+            android:background="@color/Constrast">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40dp"
+                android:gravity="center"
+                android:text="开启周期库存"
+                android:textColor="@color/Forceful"
+                android:textSize="18sp" />
+
+            <com.huofu.RestaurantOS.widget.toggleButton.zcw.togglebutton.ToggleButton
+                android:id="@+id/toggleButton_stock_supply_open_periodic_inventory"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="35dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textview_modify_stock_supply_closed_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/rl_stock_supply_open_periodec_inventory"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/stockSupplyOpenPeriodicTips"
+            android:textColor="@color/Dusky"
+            android:textSize="16sp" />
+
+        <ScrollView
+            android:id="@+id/scrollview_modify_stock_supply_closed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_modify_stock_supply_closed_tips"
+            android:layout_marginTop="5dp"
+            android:background="@color/BackgroudColor"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_stock_supply_open_periodec_list_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                />
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/rl_layout_modify_stock_supply_closed_choose_normal_inventory"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/textview_modify_stock_supply_closed_tips"
+            android:layout_marginTop="5dp"
+            android:background="@color/Constrast"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/Powerful"
+                android:text="当前库存数量"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"
+                />
+
+            <Button
+                android:id="@+id/btn_choose_fixed_amount_layout_stock_supply_closed"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:drawableRight="@drawable/arrow_right"
+                android:drawablePadding="8dp"
+                android:textSize="18sp"
+                android:textColor="@color/Dusky"
+                android:background="@android:color/transparent"
+                android:text="100"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>
+
+    <!--</RelativeLayout>-->

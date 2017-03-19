@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    >
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" 
+    android:weightSum="1">
+    <!-- android:background="#f6f6f6" -->
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1" 
+        />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white" 
+        />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="#47505a" 
+        >
+        
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent" 
+            android:layout_weight="0.08"
+            />
+        
+       <!-- <LinearLayout
+        	android:layout_width="0dp"
+        	android:layout_height="match_parent"
+        	android:layout_weight="0.16"
+        	android:orientation="vertical"
+        	android:weightSum="1"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:text=" 浏览菜单"
+                android:textSize="13sp"
+                android:clickable="false"
+                android:background="@android:color/transparent"
+                android:gravity="left|center_vertical"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:orientation="vertical"
+                    android:layout_weight="0.8"
+                    >
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.7"
+                        android:background="#ffd1d1d1"
+                        android:src="@drawable/client_menu_scan"
+                        android:scaleType="centerInside"
+                        android:id="@+id/imageButton_clientMenuSplash_scan"
+                        />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2"
+                        android:id="@+id/button_clientMenuSplash_scan"
+                        android:text=" 浏览"
+                        android:background="@color/white"
+                        android:gravity="left|center_vertical"
+                        android:textSize="16sp"
+                        android:textColor="@color/Powerful"
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    />
+
+            </LinearLayout>
+
+            
+        </LinearLayout>-->
+        
+          <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            />
+        
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.04" 
+            />
+        
+          <LinearLayout
+        	android:layout_width="0dp"
+        	android:layout_height="match_parent"
+        	android:layout_weight="0.72"
+        	android:orientation="vertical"
+        	android:weightSum="1"     
+            >
+            
+                  <Button
+                      android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="0.2" 
+                      android:text="编辑菜单"
+                      android:background="@android:color/transparent"
+                      android:gravity="left|center_vertical"
+                      android:clickable="false"
+                      android:textSize="13sp"
+                      />
+                  
+                  <LinearLayout
+                      android:layout_width="match_parent" 
+                      android:layout_height="0dp"
+                      android:layout_weight="0.8"
+                      android:orientation="horizontal"
+                      android:weightSum="1"
+                      >
+                      
+                      <LinearLayout
+                          android:layout_width="0dp"
+                          android:layout_height="match_parent" 
+                          android:layout_weight="0.2"
+                          android:weightSum="1"
+                          android:orientation="vertical"
+                          >
+                          
+                          <ImageButton
+                              android:layout_width="match_parent"
+                              android:layout_height="0dp"
+                              android:layout_weight="0.7"
+                              android:background="#ffd1d1d1"
+                              android:scaleType="centerInside"
+                              android:src="@drawable/client_menu_add"
+                              android:id="@+id/imagebutton_splash_add"
+                              />
+                          
+                           <Button
+	                          android:layout_width="match_parent"
+	                          android:layout_height="0dp"
+	                          android:layout_weight="0.2"
+	                          android:text=" 添加/修改"
+	                          android:textSize="16sp"
+	                          android:background="@color/white"
+	                          android:gravity="left|center_vertical"
+	                          android:textColor="@color/Powerful"
+                          />
+                          
+                      </LinearLayout>
+                     
+                      
+                        
+                         
+                       <View
+                          android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="0.04" 
+                          />
+                        
+                         <LinearLayout
+                          android:layout_width="0dp"
+                          android:layout_height="match_parent" 
+                          android:layout_weight="0.2"
+                          android:weightSum="1"
+                          android:orientation="vertical"
+                          >
+
+                             <ImageButton
+                                 android:id="@+id/imagebutton_splash_update"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="0dp"
+                                 android:layout_weight="0.7"
+                                 android:background="#ffd1d1d1"
+                                 android:scaleType="centerInside"
+                                 android:src="@drawable/client_menu_tongbu" />
+                          
+                           <Button
+	                          android:layout_width="match_parent"
+	                          android:layout_height="0dp"
+	                          android:layout_weight="0.2"
+	                          android:text="菜单同步"
+	                          android:textSize="16sp"
+	                          android:background="@color/white"
+	                          android:gravity="left|center_vertical"
+	                          android:textColor="@color/Powerful"
+                          />
+                          
+                      </LinearLayout>
+                      
+                         
+                       <View
+                          android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="0.04" 
+                          />
+                      
+                        <LinearLayout
+                          android:layout_width="0dp"
+                          android:layout_height="match_parent" 
+                          android:layout_weight="0.2"
+                          android:weightSum="1"
+                          android:orientation="vertical"
+                          >
+                          
+                          <ImageButton
+                              android:layout_width="match_parent"
+                              android:layout_height="0dp"
+                              android:layout_weight="0.7"
+                              android:background="#ffd1d1d1"
+                              android:scaleType="centerInside"
+                              android:src="@drawable/client_menu_modify"
+                              android:id="@+id/imagebutton_splash_set_ip"
+                              />
+                          
+                           <Button
+	                          android:layout_width="match_parent"
+	                          android:layout_height="0dp"
+	                          android:layout_weight="0.2"
+	                          android:text="设置电视IP"
+	                          android:textSize="16sp"
+	                          android:textColor="@color/Powerful"
+	                          android:background="@color/white"
+	                          android:gravity="left|center_vertical"
+                          />
+                          
+                      </LinearLayout>
+                        
+                      
+                  </LinearLayout>
+                  
+              </LinearLayout>
+            
+            
+        </LinearLayout>
+         <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white" 
+        />
+        
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_action_bar_meal_done_menu"
+        android:layout_width="60dp"
+        android:layout_height="44dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/button_action_bar_meal_done_menu"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/menu_icon_seletor" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_action_bar_meal_done_empty"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/tv_action_bar_meal_done_meal_port_name"
+        android:layout_width="120dp"
+        android:layout_height="44dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/rl_action_bar_meal_done_menu"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="主出餐口"
+        android:textColor="#363636"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_action_bar_meal_done_switch_meal_port"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tv_action_bar_meal_done_meal_port_name"
+        android:background="@android:color/transparent"
+        android:text="切换"
+        android:textColor="@color/Blue"
+        android:textSize="18sp" />
+
+
+    <Button
+        android:id="@+id/button_action_bar_meal_done_checkout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_toLeftOf="@id/view_action_bar_meal_done_empty"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="出餐"
+        android:textColor="#363636"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/view_action_bar_below_push"
+        android:layout_width="200dp"
+        android:layout_height="3dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="200dp"
+        android:layout_toLeftOf="@id/view_action_bar_meal_done_empty">
+        <!-- android:layout_below="@id/button_action_bar_meal_done_checkout" -->
+        <!-- android:layout_marginBottom="4dp" -->
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/tab_configrue_draw" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/button_action_bar_meal_done_checkout_history"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="200dp"
+        android:layout_toRightOf="@id/view_action_bar_meal_done_empty"
+        android:alpha="0.5"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="出餐单"
+        android:textColor="#363636"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/view_action_bar_below_push_history"
+        android:layout_width="200dp"
+        android:layout_height="3dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="200dp"
+        android:layout_toRightOf="@id/view_action_bar_meal_done_empty">
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/tab_configrue_draw" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_action_bar_meal_done_refresh"
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="150dp">
+
+        <Button
+            android:id="@+id/button_action_bar_meal_done_refresh"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/refresh" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_action_bar_meal_done_call"
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/button_action_bar_meal_done_call"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/call_selector" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

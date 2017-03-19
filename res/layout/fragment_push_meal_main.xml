@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <View
+        android:id="@+id/view_action_bar_meal_done_whole_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentTop="true"
+        android:background="#c0c0c0" />
+
+    <RelativeLayout
+        android:id="@+id/rl_now_push_meal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        >
+
+        <TextView
+            android:id="@+id/tv_now_push_meal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="250dp"
+            android:text="当前处于自动出餐状态"
+            android:textColor="@color/Black"
+            android:textSize="50sp"
+           />
+
+        <com.huofu.RestaurantOS.widget.toggleButton.zcw.togglebutton.ToggleButton
+            android:id="@+id/tb_now_push_meal"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/tv_now_push_meal"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_mealdone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0.5dp"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/meal_push_status_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1.02">
+
+            <RelativeLayout
+                android:id="@+id/rl_meal_done_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.26"
+                android:background="#47505a">
+
+                <Button
+                    android:id="@+id/empty_meal_done_expandablelistview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/empty_order"
+                    android:text="没有待出餐菜品"
+                    android:visibility="visible" />
+
+
+                <ExpandableListView
+                    android:id="@+id/expandableListView_all_push"
+                    android:layout_width="match_parent"
+                    android:layout_height="580dp"
+                    android:background="#47505a"
+                    android:descendantFocusability="blocksDescendants"
+                    android:divider="@null"
+                    android:fastScrollEnabled="true"
+                    android:gravity="center|left"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"
+                    android:scrollbarFadeDuration="100000000"
+                    android:smoothScrollbar="true"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#353b43" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.01"
+                android:background="#46505a" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_analysis_set"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.74"
+                android:background="#46505a">
+
+                <Button
+                    android:id="@+id/empty_meal_done_gridview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/empty_meal_done"
+                    android:text="没有设置统计菜品" />
+
+                <Button
+                    android:id="@+id/button_gridview_set_analysis"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/settiing_meal_done"
+                    android:gravity="center" />
+
+
+                <GridView
+                    android:id="@+id/gridview_special_food"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="top|left"
+                    android:layout_marginTop="58dp"
+                    android:background="#ff47505a"
+                    android:columnWidth="3dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="16dp"
+                    android:numColumns="3"
+                    android:scrollbarFadeDuration="1000000"
+                    android:verticalSpacing="18dp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.01"
+                android:background="#46505a" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_meal_done_auto_push"
+            android:layout_width="260dp"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#ebeef1">
+
+            <TextView
+                android:id="@+id/tv_meal_done_auto_push_tips"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="本出餐口当前处于手工出餐状态"
+                android:textColor="@color/Powerful" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/tv_meal_done_auto_push_tips"
+                android:layout_marginLeft="10dp"
+                android:background="@color/Pale" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/tv_meal_done_auto_push_tips"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="自动出餐"
+                android:textColor="@color/Powerful" />
+
+            <com.huofu.RestaurantOS.widget.toggleButton.zcw.togglebutton.ToggleButton
+                android:id="@+id/tb_meal_done_whether_auto_push"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_meal_done_auto_push_tips"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="88dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_action_bar_setting_menu"
+            android:layout_width="100dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true">
+
+            <Button
+                android:id="@+id/button_action_bar_setting_menu"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/menu_icon_seletor"
+                 />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/button_action_bar_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="130dp"
+
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:text="设置"
+            android:textColor="@color/Powerful"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/actionbar_btn_setting_edit_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="364dp"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:text="取消"
+            android:textColor="@color/Blue"
+            android:textSize="18dp" />
+
+
+        <Button
+            android:id="@+id/actionbar_btn_setting_back"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="345dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/back_icon_seletor"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="打印机设置"
+            android:textColor="@color/Blue"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/actionbar_btn_setting_edit_save"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:text="完成"
+            android:textColor="@color/Blue"
+            android:textSize="18sp" />
+
+
+        <RelativeLayout
+            android:layout_width="714dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            >
+
+            <Button
+                android:id="@+id/button_action_bar_setting_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/Powerful"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="310.5dp"
+        android:alpha="0.2"
+        android:background="#000000" />
+
+</RelativeLayout>

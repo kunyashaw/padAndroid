@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+     android:layout_height="60dp"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:id="@+id/rl_store_item"
+         android:layout_width="300dp"
+         android:layout_height="60dp"
+         android:layout_alignParentLeft="true"
+         android:background="#ffffff"
+        >
+        
+        <TextView
+            android:id="@+id/tv_store_item_name"
+            android:layout_width="wrap_content" 
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:textColor="#363636"
+            android:textSize="16sp"
+            android:text="万通中心test"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

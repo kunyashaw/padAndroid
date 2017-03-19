@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.huofu.RestaurantOS.ui.pannel.clientMenu.CustomScrollView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollview_new_from_history_menu"
+    android:background="@drawable/blackboard"
+    >
+    
+     <!-- android:fillViewport="true" -->
+    
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+	    android:id="@+id/relativeLayout_new_from_history_menu"
+	    android:background="@drawable/blackboard"
+        />
+
+    
+</com.huofu.RestaurantOS.ui.pannel.clientMenu.CustomScrollView>
+

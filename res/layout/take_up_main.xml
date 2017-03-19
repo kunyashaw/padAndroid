@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    >
+    
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/rl_takeup_main" 
+       >
+       
+        <Button
+        android:id="@+id/button_action_bar_takeup_menu"
+        android:layout_width="200dp" 
+        android:layout_height="200dp"
+        android:background="@drawable/button_action_bar_selector"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:alpha="0.3"
+        />
+        
+        <!-- android:layout_marginLeft="15dp" -->
+        <!-- android:layout_marginTop="10dp" -->
+       
+       <TextView
+           android:id="@+id/tv_takeup_main_merchant_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_marginTop="132dp"
+           android:layout_centerHorizontal="true"
+           android:textColor="#ffffff"
+           android:textSize="48sp"
+           android:textStyle="bold"
+           android:text="五味，放心吃"
+           android:gravity="center"
+           android:background="@android:color/transparent"
+           />
+       
+       <TextView
+           android:id="@+id/tv_takeup_main_merchant_store_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/tv_takeup_main_merchant_name"
+           android:layout_marginTop="10dp"
+           android:layout_centerHorizontal="true"
+           android:textSize="16sp"
+           android:textColor="#ffffff"
+           android:text="五味餐厅•万通中心店"
+           android:alpha="0.8"
+           android:background="@android:color/transparent"
+           />
+       
+       
+       
+       <Button
+          android:id="@+id/button_takeUp_start"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_marginBottom="175dp"
+          android:layout_centerHorizontal="true"
+
+          android:text="取餐"
+          android:textSize="21sp"
+          android:textColor="#ffffff"
+          android:gravity="center"
+          
+          android:background="@drawable/takeup_main_selector"
+           />
+       
+         <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_above="@id/button_takeUp_start"
+           android:layout_marginBottom="28dp"
+           android:layout_centerHorizontal="true" 
+           android:background="@drawable/bowel" 
+           />
+       
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_marginBottom="20dp"
+           android:layout_centerHorizontal="true"
+           
+           android:text="火付云餐饮OS v1.0  授权五味餐厅"
+           android:textColor="#ffffff"
+           android:textSize="14sp"
+           
+           android:alpha="0.4"
+           android:gravity="center"
+           android:background="@android:color/transparent" 
+           
+           />
+       
+       
+   </RelativeLayout>
+   
+   
+   <RelativeLayout
+       android:id="@+id/rl_takeup_dial"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       >
+       
+       <TextView
+           android:id="@+id/tv_takeup_dial_merchant_store_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="#ffffff"
+           android:textSize="28sp"
+           android:layout_centerHorizontal="true"
+           android:layout_alignParentTop="true"
+           android:layout_marginTop="20dp"
+           android:text="五味，放心吃。"
+           android:textStyle="bold"
+           android:visibility="invisible"
+           />
+   
+   <RelativeLayout
+       android:id="@+id/rl_takeup_dial_or_choose_packaged"
+	    android:layout_width="894dp"
+	    android:layout_height="700dp"
+		android:layout_centerHorizontal="true"	    
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="30dp"
+	    android:background="@drawable/white_popup_window">
+    
+       <!-- android:layout_marginLeft="75dp"
+       android:layout_alignParentLeft="true" -->
+       
+       <RelativeLayout
+           android:id="@+id/rl_takeup_child_dial"
+           android:layout_width="match_parent" 
+           android:layout_height="match_parent"
+           >
+
+           <RelativeLayout
+               android:id="@+id/rl_takeup_dial_close"
+               android:layout_width="100dp"
+               android:layout_height="100dp" 
+               android:layout_alignParentRight="true"
+	           android:layout_alignParentTop="true"
+               >
+               
+               <Button
+		           android:id="@+id/button_takeup_dial_close"
+		           android:layout_width="wrap_content" 
+		           android:layout_height="wrap_content"
+		           android:background="@drawable/closed_selector"
+		           android:layout_alignParentRight="true"
+	          	   android:layout_alignParentTop="true"
+		           android:layout_marginTop="31dp"
+	          	   android:layout_marginRight="31dp"
+	           />
+               
+           </RelativeLayout>
+           
+           
+           <!-- <TextView 
+		        android:layout_width="250dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="30sp"
+		        android:textColor="#363636"
+		        android:gravity="center|bottom"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginTop="33dp"
+		        android:background="@android:color/transparent"
+		        android:layout_alignParentLeft="true"
+		        android:layout_marginLeft="220dp"
+		        android:text="请输入您的取餐码:"
+		        /> -->
+       
+    
+		    <TextView 
+		        android:id="@+id/textview_dialog_takeup_dial_content_input"
+		        android:layout_width="450dp"
+		        android:layout_height="wrap_content"
+		        android:textSize="32sp"
+		        android:textColor="#363636"
+		        android:gravity="center|bottom"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginTop="30dp"
+		        android:background="@android:color/transparent"
+		        android:layout_alignParentLeft="true"
+		        android:layout_marginLeft="150dp"
+		        />
+		    <!-- android:hint="请输入取餐码" -->
+		    <!-- android:layout_centerHorizontal="true" -->
+		    
+		    <View
+		        android:id="@+id/view_takeup_main_underline"
+		        android:layout_width="450dp"
+		        android:layout_height="1dp" 
+		        android:layout_below="@id/textview_dialog_takeup_dial_content_input"
+		        android:layout_marginTop="8dp"
+		        android:layout_alignParentLeft="true"
+		        android:layout_marginLeft="150dp"
+		        android:background="#e1c3bc"
+		        />
+		    
+		     <!--  <View
+		        android:layout_width="250dp"
+		        android:layout_height="1dp" 
+		        android:layout_below="@id/textview_dialog_takeup_dial_content_input"
+		        android:layout_marginTop="8dp"
+		        android:layout_alignParentLeft="true"
+		        android:layout_marginLeft="150dp"
+		        android:background="#e1c3bc"
+		        /> -->
+		      
+		    <!-- android:layout_centerHorizontal="true" -->
+		    
+        
+	        
+	         <Button
+	            android:id="@+id/button_takeup_dial_num2"
+	            android:layout_width="141dp" 
+	            android:layout_height="141dp"
+	            android:background="@drawable/number_123_button_selector"
+	            android:layout_alignParentLeft="true"
+	            android:layout_marginLeft="310dp"
+	            android:layout_below="@id/view_takeup_main_underline"
+	            android:layout_marginTop="20dp"
+	            android:text="2"
+	            android:textSize="32sp"
+	            android:textColor="#ff484848"
+	            android:onClick="takeUpKeyBoardNumClickListner"
+	            />
+	         <!-- android:layout_centerHorizontal="true" -->
+	         
+	         <Button
+	            android:id="@+id/button_takeup_dial_num1"
+	            android:layout_width="141dp" 
+	            android:layout_height="141dp"
+	            android:background="@drawable/number_123_button_selector"
+	            android:layout_below="@id/view_takeup_main_underline"
+	            android:layout_marginTop="20dp"
+	            android:text="1"
+	            android:textSize="32sp"
+	            android:textColor="#ff484848"
+	            android:layout_alignParentLeft="true"
+	            android:layout_marginLeft="150dp"
+	            android:onClick="takeUpKeyBoardNumClickListner"
+	            />
+	         
+	        <!--   android:layout_toLeftOf="@id/button_takeup_dial_num2"
+	            android:layout_marginRight="14dp" -->
+	         
+	         <Button
+	            android:id="@+id/button_takeup_dial_num3"
+	            android:layout_width="141dp" 
+	            android:layout_height="141dp"
+	            android:background="@drawable/number_123_button_selector"
+	            android:layout_below="@id/view_takeup_main_underline"
+	            android:layout_marginTop="20dp"
+	            android:text="3"
+	            android:textSize="32sp"
+	            android:textColor="#ff484848"
+	            android:layout_toRightOf="@id/button_takeup_dial_num2"
+	            android:layout_marginLeft="14dp"
+	            android:onClick="takeUpKeyBoardNumClickListner"
+	            />
+	         
+	        
+	         <Button
+	            android:id="@+id/button_takeup_dial_num5"
+	            android:layout_width="141dp" 
+	            android:layout_height="141dp"
+	            android:background="@drawable/number_456_button_selector"
+	            android:layout_below="@id/view_takeup_main_underline"
+	            android:layout_marginTop="161dp"
+	            android:text="5"
+	            android:textSize="32sp"
+	            android:textColor="#ff484848"
+	            android:layout_alignParentLeft="true"
+	            android:layout_marginLeft="310dp"
+	            android:onClick="takeUpKeyBoardNumClickListner"
+	            />
+	         <!-- android:layout_centerHorizontal="true" -->
+	         
+	         <Button
+	            android:id="@+id/button_takeup_dial_num4"
+	            android:layout_width="141dp" 
+	            android:layout_height="141dp"
+	            android:background="@drawable/number_456_button_selector"
+	            android:layout_below="@id/view_takeup_main_underline"
+	            android:layout_marginTop="161dp"
+	            android:text="4"
+	            android:textSize="32sp"
+	            android:textColor="#ff484848"
+	            android:layout_alignParentLeft="true"
+	            android:layout_marginLeft="150dp"
+	            android:onClick="takeUpKeyBoardNumClickListner"
+	            />
+	         
+	         <!--  android:layout_toLeftOf="@id/button_takeup_dial_num5"
+	            android:layout_marginRight="14dp" -->
+	         
+	         <Button
+	            android:id="@+id/button_takeup_dial_num6"
+	        		android:layout_width="141dp" 
+	            android:layout_height="141dp"
+	            android:background="@drawable/number_456_button_selector"
+	            android:layout_below="@id/view_takeup_main_underline"
+	            android:layout_marginTop="161dp"
+	            android:text="6"
+	            android:textSize="32sp"
+	            android:textColor="#ff484848"
+	            android:layout_toRightOf="@id/button_takeup_dial_num5"
+	            android:layout_marginLeft="14dp"
+	            android:onClick="takeUpKeyBoardNumClickListner"
+	            />
+	         
+	          <Button
+	              android:id="@+id/button_takeup_get_meal"
+	              android:layout_width="139dp"
+	              android:layout_height="139dp"
+	              android:layout_toRightOf="@id/button_takeup_dial_num6"
+	              android:layout_marginLeft="54dp"
+	              android:layout_below="@id/button_takeup_dial_num3"
+	              android:background="@drawable/get_meal_take_up_selector"
+	              android:textSize="21sp"      
+	              android:textColor="#484848"
+	              android:text="取餐"
+	              android:gravity="center"
+	              android:onClick="takeUpKeyBoardEnterClickListner"/>
+	        
+	        
+	         <Button
+	            android:id="@+id/button_takeup_dial_num8"
+	            android:layout_width="141dp" 
+	            android:layout_height="141dp"
+	            android:background="@drawable/number_456_button_selector"
+	            android:layout_below="@id/view_takeup_main_underline"
+	            android:layout_marginTop="302dp"
+	            android:text="8"
+	            android:textSize="32sp"
+	            android:textColor="#ff484848"
+	            android:layout_alignParentLeft="true"
+	            android:layout_marginLeft="310dp"
+	            android:onClick="takeUpKeyBoardNumClickListner"
+	            />
+	        <!--  android:layout_toLeftOf="@id/button_takeup_dial_num8"
+	            android:layout_marginRight="14dp" -->
+	         
+	         
+	         
+	          <Button
+	            android:id="@+id/button_takeup_dial_num7"
+	            	android:layout_width="141dp" 
+	            android:layout_height="141dp"
+	            android:background="@drawable/number_789_button_selector"
+	            android:layout_below="@id/view_takeup_main_underline"
+	            android:layout_marginTop="302dp"
+	            android:text="7"
+	            android:textSize="32sp"
+	            android:textColor="#ff484848"
+	            	android:layout_alignParentLeft="true"
+	            android:layout_marginLeft="150dp"
+	            android:onClick="takeUpKeyBoardNumClickListner"
+	            />
+	          
+	        <!--   android:layout_toLeftOf="@id/button_takeup_dial_num8"
+	            android:layout_marginRight="14dp"
+	           -->
+	         
+	         
+         	<Button
+	            android:id="@+id/button_takeup_dial_num9"
+	           	android:layout_width="141dp" 
+	            android:layout_height="141dp"
+	            android:background="@drawable/number_789_button_selector"
+	            android:layout_below="@id/view_takeup_main_underline"
+	            android:layout_marginTop="302dp"
+	            android:text="9"
+	            android:textSize="32sp"
+	            android:textColor="#ff484848"
+	            android:layout_toRightOf="@id/button_takeup_dial_num8"
+	            android:layout_marginLeft="14dp"
+	            android:onClick="takeUpKeyBoardNumClickListner"
+	            />
+	         
+	          
+           <Button
+	            android:id="@+id/button_takeup_dial_num0"
+	            android:layout_width="141dp" 
+	            android:layout_height="141dp"
+	            android:background="@drawable/number_0_button_selector"
+	            android:layout_below="@id/view_takeup_main_underline"
+	            android:layout_marginTop="443dp"
+	            android:text="0"
+	            android:textSize="32sp"
+	            android:textColor="#ff484848"
+	            android:layout_alignParentLeft="true"
+	            android:layout_marginLeft="310dp"
+	            android:onClick="takeUpKeyBoardNumClickListner"
+	            />
+           <!-- android:layout_centerHorizontal="true" -->
+	           
+	          <Button
+	            android:id="@+id/button_takeup_dial_clear"
+	            android:layout_width="141dp" 
+	            android:layout_height="141dp"
+	            android:background="@android:color/transparent"
+	            android:layout_below="@id/view_takeup_main_underline"
+	            android:layout_marginTop="443dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_marginLeft="150dp"
+	            
+	            android:text="清空"
+	            android:textSize="18sp"
+	            android:textColor="#ff484848"
+	            android:gravity="center"
+	            android:onClick="takeUpKeyBoardClearClickListner"
+	            />
+	           
+	           
+	          <!-- android:background="@android:color/transparent" -->
+	          
+	          <RelativeLayout
+	              android:id="@+id/rl_button_takeup_dial_delete"
+	              android:layout_width="141dp"
+	              android:layout_height="141dp" 
+	              android:layout_below="@id/view_takeup_main_underline"
+	              android:layout_marginTop="443dp"
+	           	  android:layout_toRightOf="@id/button_takeup_dial_num0"
+	           	  android:layout_marginLeft="14dp"
+	           	  android:onClick="takeUpKeyBoardBackClickListner"
+	              >
+               
+	              <Button
+		            android:id="@+id/button_takeup_dial_delete"
+		            android:layout_width="49dp" 
+		            android:layout_height="33dp"
+		            android:background="@drawable/clear_btn"
+		            android:textSize="18sp"
+		            android:textColor="#ff484848"
+		            android:gravity="center"
+		            android:layout_centerInParent="true"
+		            android:onClick="takeUpKeyBoardBackClickListner"
+	            />
+	              
+	          </RelativeLayout>
+	         
+	         </RelativeLayout>
+       
+       </RelativeLayout>
+   
+   </RelativeLayout>
+   
+   
+    
+</RelativeLayout>

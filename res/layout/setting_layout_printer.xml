@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="690dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+   <!-- <RelativeLayout
+        android:id="@+id/rl_setting_layout_printer_create_order"
+         android:layout_width="630dp"
+         android:layout_height="60dp"
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="30dp"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="30dp"
+         android:background="#ffffff"
+        >
+        
+        <TextView
+            android:id="@+id/tv_setting_layout_printer_create_order_tips"
+            android:layout_width="wrap_content" 
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:textColor="#363636"
+            android:textSize="16sp"
+            android:text="点餐打印机配置"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            />
+        
+	    <ImageView
+	        android:id="@+id/imageview_setting_layout_printer_create_order_title_right_arrow"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/arrow_right_pressed"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="23dp"
+	        android:layout_centerVertical="true"/>
+	    
+	    <TextView
+	        android:id="@+id/tv_setting_layout_printer_create_order_content"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="60dp"
+	        android:gravity="center_vertical"
+	        android:textSize="18sp"
+	        android:textColor="#898989"
+	        android:text="test"
+	        android:layout_toLeftOf="@id/imageview_setting_layout_printer_create_order_title_right_arrow"
+	        android:layout_marginRight="11dp"
+	        />
+    </RelativeLayout>
+    
+    
+    <RelativeLayout
+        android:id="@+id/rl_setting_layout_printer_kitechen"
+         android:layout_width="630dp"
+         android:layout_height="60dp"
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="30dp"
+         android:background="#ffffff"
+         android:layout_below="@id/rl_setting_layout_printer_create_order"
+         android:layout_marginTop="30dp"
+         
+        >
+        <TextView
+            android:id="@+id/tv_setting_layout_printer_tips"
+            android:layout_width="wrap_content" 
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:textColor="#363636"
+            android:textSize="16sp"
+            android:text="后厨打印机配置"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            />
+        
+	    <ImageView
+	        android:id="@+id/imageview_setting_layout_printer_kitchen_title_right_arrow"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/arrow_right_pressed"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="23dp"
+	        android:layout_centerVertical="true"/>
+	    
+	    <TextView
+	        android:id="@+id/tv_setting_layout_printer_kitchen_content"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="60dp"
+	        android:gravity="center_vertical"
+	        android:textSize="18sp"
+	        android:textColor="#898989"
+	        android:text="test"
+	        android:layout_toLeftOf="@id/imageview_setting_layout_printer_kitchen_title_right_arrow"
+	        android:layout_marginRight="11dp"
+	        />
+    </RelativeLayout>-->
+    
+    
+    
+    <RelativeLayout
+        android:id="@+id/rl_setting_layout_printer_self_takeup"
+         android:layout_width="630dp"
+         android:layout_height="60dp"
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="30dp"
+         android:layout_marginTop="30dp"
+         android:background="#ffffff"
+        >
+        <TextView
+            android:id="@+id/tv_setting_layout_printer_self_takeup_tips"
+            android:layout_width="wrap_content" 
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:textColor="#363636"
+            android:textSize="16sp"
+            android:text="自助取号打印机配置"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            />
+        
+	    <ImageView
+	        android:id="@+id/imageview_setting_layout_printer_self_takeup_title_right_arrow"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/arrow_right_pressed"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="23dp"
+	        android:layout_centerVertical="true"/>
+	    
+	    <TextView
+	        android:id="@+id/tv_setting_layout_printer_self_takeup_content"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="60dp"
+	        android:gravity="center_vertical"
+	        android:textSize="18sp"
+	        android:textColor="#898989"
+	        android:text="test"
+	        android:layout_toLeftOf="@id/imageview_setting_layout_printer_self_takeup_title_right_arrow"
+	        android:layout_marginRight="11dp"
+	        />
+    </RelativeLayout>
+    
+    
+    
+
+</RelativeLayout>

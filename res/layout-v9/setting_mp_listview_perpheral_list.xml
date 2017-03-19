@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="630dp"
+    android:layout_height="wrap_content"
+    >
+    
+    <TextView
+        android:id="@+id/tv_setting_mp_peripheral_choose_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginLeft="30dp"
+        android:visibility="invisible"
+        />
+    
+    <ListView
+        android:id="@+id/listview_setting_mp_peripheral"
+        android:layout_width="630dp" 
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginLeft="30dp"   
+	    android:divider="@null" 
+        />
+
+    <TextView
+        android:id="@+id/tv_setting_mp_peripheral_no"
+        android:layout_width="630dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/listview_setting_mp_peripheral"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:textSize="16sp"
+        android:textColor="#565656"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:paddingLeft="42dp"
+        android:text="不打印小票"
+        />
+
+    <View
+        android:layout_width="600dp"
+        android:layout_height="0.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="60dp"
+        android:background="#dddddd"
+        android:layout_below="@id/tv_setting_mp_peripheral_no"
+        />
+
+    <TextView
+		android:id="@+id/tv_setting_mp_peripheral_add"
+		android:layout_width="630dp"
+		android:layout_height="60dp"
+		android:layout_below="@id/tv_setting_mp_peripheral_no"
+        android:layout_marginTop="1dp"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="30dp"
+		android:textSize="16sp"
+        android:textColor="#565656"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:paddingLeft="42dp"
+        />
+    
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ Copyright (C) 2009-2010 Aubort Jean-Baptiste (Rorist)
+ Licensed under GNU's GPL 2, see README
+-->
+<resources>
+
+    <string-array name="method_discover_value">
+        <item>@string/zero</item>
+        <item>@string/one</item>
+    </string-array>
+
+    <string-array name="menu_type">
+        <item>@string/breakfast</item>
+        <item>@string/launch</item>
+        <item>@string/dinner</item>
+    </string-array>
+
+
+    <string-array name="menu_weekday">
+        <item>@string/Monday</item>
+        <item>@string/Tuesday</item>
+        <item>@string/Wednesday</item>
+        <item>@string/Thursday</item>
+        <item>@string/Friday</item>
+        <item>@string/Saturday</item>
+        <item>@string/Sunday</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="630dp"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="630dp"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listview_standard_ports_list"
+            android:layout_width="630dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:divider="@null" />
+
+        <Button
+            android:id="@+id/setting_empty_meal_ports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/empty_order"
+            android:text="未发现出餐台，点击添加一个吧"
+            android:textColor="@color/Powerful"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/port_list_standart_add"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="#dddddd"
+            />
+
+        <Button
+            android:id="@+id/btn_port_list_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/add_pressed"
+            android:text="添加出餐台"
+            android:textSize="15dp"
+            android:textColor="@color/Powerful"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

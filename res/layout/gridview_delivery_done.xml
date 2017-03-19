@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="310dp"
+    android:layout_height="210dp"
+    android:background="@drawable/gridview_deliveried_item_background">
+
+    <RelativeLayout
+        android:id="@+id/gridview_delivery_done_head"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentTop="true"
+         >
+
+        <TextView
+            android:id="@+id/tv_gridview_delivery_done_serinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="22dp"
+            android:textColor="#ffffff"
+            android:textSize="21sp" />
+
+
+        <TextView
+            android:id="@+id/tv_gridview_delivery_done_item_delivery_building_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="53dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:maxWidth="300dp"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+        
+        
+        
+        <TextView
+            android:id="@+id/tv_gridview_delivery_done_item_delivery_send_info"
+            android:layout_width="match_parent" 
+            android:layout_height="30dp"
+            android:background="#e9e9e9"
+            android:textColor="#565656"
+            android:textSize="14sp"
+            android:paddingLeft="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="85dp"
+            android:gravity="center_vertical"
+            />
+        
+        <View
+            android:layout_height="0.5dp"
+            android:layout_width="match_parent" 
+            android:layout_below="@id/tv_gridview_delivery_done_item_delivery_send_info"
+            android:background="#d2d2d2"
+            />
+        
+         <View
+            android:layout_height="0.5dp"
+            android:layout_width="match_parent" 
+            android:layout_above="@id/tv_gridview_delivery_done_item_delivery_send_info"
+            android:background="#d2d2d2"
+            />
+        
+        
+        
+
+        <TextView
+            android:id="@+id/tv_gridview_delivery_done_item_delivery_order_content"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="115dp"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:lines="1"
+            android:textColor="#898989"
+            android:textSize="14sp"
+            />
+    </RelativeLayout>
+
+
+
+    </RelativeLayout>

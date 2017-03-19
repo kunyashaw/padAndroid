@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8" >
+    
+
+    <SearchView
+        android:id="@+id/sv_gridview_delivery_search"
+        android:layout_width="635dp"
+        android:layout_height="39dp"
+        android:background="@drawable/search_icon_seletcor"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:textColor="#ff0000"
+        android:textSize="20sp"
+        android:queryHint="输入手机号开始查询"
+        android:inputType="phone" 
+       />
+    
+    <GridView
+        android:id="@+id/gridview_delivery_search"
+       	android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+        android:horizontalSpacing="17dp"
+        android:verticalSpacing="16dp"
+        android:numColumns="3"
+        android:scrollbarFadeDuration="10000"
+        android:layout_below="@id/sv_gridview_delivery_search"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="30dp" 
+        android:layout_marginRight="30dp"
+        />
+    
+    
+    
+</RelativeLayout>

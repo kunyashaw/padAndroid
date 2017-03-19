@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:weightSum="1"
+        android:orientation="vertical"
+        >
+        
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="0.2" 
+	        android:orientation="horizontal"
+	        android:weightSum="1"
+	        >
+	        
+	        <Button
+	            android:id="@+id/button_smallest_button"
+	            android:background="@drawable/guide_selector"
+	            android:layout_width="0dp"
+				android:layout_weight="0.2" 
+	            android:layout_height="wrap_content"
+	            android:text="超小" 
+	            />
+	        
+	        	        
+	        <Button
+	            android:id="@+id/button_small_button"
+	            android:background="@drawable/guide_selector"
+            	android:layout_width="0dp"
+				android:layout_weight="0.2" 
+	            android:layout_height="wrap_content"
+	            android:text="小" 
+	            />
+	        
+	        	        
+	        <Button
+	            android:id="@+id/button_medium_button"
+	            android:background="@drawable/guide_selector"
+            	android:layout_width="0dp"
+				android:layout_weight="0.2" 
+	            android:layout_height="wrap_content"
+	            android:text="中" 
+	            />
+	        
+	        	        
+	        <Button
+	            android:id="@+id/button_big_button"
+	            android:background="@drawable/guide_selector"
+	            android:layout_width="0dp"
+				android:layout_weight="0.2" 
+	            android:layout_height="wrap_content"
+	            android:text="大" 
+	            />
+	        
+	        	        
+	        <Button
+	            android:id="@+id/button_biggest_button"
+	            android:background="@drawable/guide_selector"
+          		android:layout_width="0dp"
+				android:layout_weight="0.2"          		
+	            android:layout_height="wrap_content"
+	            android:text="超大" 
+	            />
+	        
+	    </LinearLayout>
+
+	<!--     <com.ShanFuBao.SmartCall.clientMenu.VerticalSeekBar_Reverse
+	        android:id="@+id/seekBar_font_size"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="0.5" /> -->
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent" 
+	        android:layout_height="0dp"
+	        android:layout_weight="0.5"
+	        android:orientation="horizontal"
+	        android:weightSum="1"
+	        >
+	        
+	        <TextView
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent" 
+	            android:layout_weight="0.05"
+	            android:id="@+id/textview_show_font_detail_size"
+	            />
+	        	    
+		    <SeekBar 
+		        android:id="@+id/seekBar_font_size"
+		        android:layout_width="0dp"
+		        android:layout_height="match_parent"
+		        android:layout_weight="0.95" />
+	        
+	    </LinearLayout>
+
+	    
+
+	    	    </LinearLayout>
+	    
+    <TextView
+        android:id="@+id/textview_preview_font_size"
+        android:layout_width="wrap_content" 
+        android:layout_height="100dp"
+        android:hint="你好，五味网络餐厅。"
+        />
+	    
+    
+</LinearLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:test="http://schemas.android.com/apk/res-auto"
+    android:layout_width="630dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        >
+        
+        
+         <RelativeLayout
+	         android:id="@+id/rl_setting_take_out_toggle"
+	         android:layout_width="630dp"
+	         android:layout_height="60dp"
+	         android:layout_alignParentLeft="true"
+	         android:layout_marginLeft="30dp"
+	         android:layout_alignParentTop="true"
+	         android:layout_marginTop="30dp"
+	         android:background="#ffffff">
+        
+	        <TextView
+	            android:layout_width="wrap_content" 
+	            android:layout_height="60dp"
+	            android:gravity="center_vertical"
+	            android:textColor="#363636"
+	            android:textSize="16sp"
+	            android:text="开启订单外送"
+	            android:layout_alignParentLeft="true"
+	            android:layout_marginLeft="16dp"
+	            />
+	        
+		    
+	        <RelativeLayout
+	            android:layout_width="100dp" 
+		        android:layout_height="60dp"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginRight="16dp"
+	            >
+	            
+	            <com.huofu.RestaurantOS.widget.toggleButton.zcw.togglebutton.ToggleButton
+		      		    android:id="@+id/btn_setting_layout_takeout"
+				        android:layout_width="80dp" 
+				        android:layout_height="30dp"
+				        android:layout_centerVertical="true"
+		      		    />
+	    <!--         <com.shanfubaoAndroid.cutomWidget.SlipButton
+			        android:id="@+id/btn_setting_layout_takeout"
+			        android:layout_width="100dp" 
+			        android:layout_height="60dp"
+			        android:layout_centerVertical="true"
+			        test:bg="@drawable/sb_bg"
+		      		test:slipImg="@drawable/sb_slip_img"
+		      		test:slipOn="false" /> -->
+	            
+	        </RelativeLayout>
+	        
+    		</RelativeLayout>
+        
+         
+         
+         
+          <RelativeLayout
+	         android:id="@+id/rl_setting_take_out_scope"
+	         android:layout_width="630dp"
+	         android:layout_height="60dp"
+	         android:layout_alignParentLeft="true"
+	         android:layout_marginLeft="30dp"
+	         android:layout_below="@id/rl_setting_take_out_toggle"
+	         android:layout_marginTop="30dp"
+	         android:background="#ffffff">
+        
+		        <TextView
+		            android:id="@+id/tv_setting_take_out_scope_tips"
+		            android:layout_width="wrap_content" 
+		            android:layout_height="60dp"
+		            android:gravity="center_vertical"
+		            android:textColor="#363636"
+		            android:textSize="16sp"
+		            android:text="外送范围"
+		            android:layout_alignParentLeft="true"
+		            android:layout_marginLeft="16dp"
+		            />
+		        
+			    <ImageView
+			        android:id="@+id/imageview_setting_take_out_scope_arrow"
+			        android:layout_width="wrap_content" 
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/arrow_right_pressed"
+			        android:layout_alignParentRight="true"
+			        android:layout_marginRight="23dp"
+			        android:layout_centerVertical="true"/>
+			    
+			    <TextView
+			        android:id="@+id/tv_setting_take_out_scope_hint"
+			        android:layout_width="wrap_content" 
+			        android:layout_height="60dp"
+			        android:gravity="center_vertical"
+			        android:textSize="18sp"
+			        android:textColor="#898989"
+			        android:text="test"
+			        android:layout_toLeftOf="@id/imageview_setting_take_out_scope_arrow"
+			        android:layout_marginRight="11dp"
+			        />
+    			</RelativeLayout>
+    			
+          
+            <RelativeLayout
+	         android:id="@+id/rl_setting_take_out_time_bucket"
+	         android:layout_width="630dp"
+	         android:layout_height="60dp"
+	         android:layout_alignParentLeft="true"
+	         android:layout_marginLeft="30dp"
+	         android:layout_below="@id/rl_setting_take_out_scope"
+	         android:layout_marginTop="30dp"
+	         android:background="#ffffff">
+        
+		        <TextView
+		            android:id="@+id/tv_setting_take_out_time_bucket_tips"
+		            android:layout_width="wrap_content" 
+		            android:layout_height="60dp"
+		            android:gravity="center_vertical"
+		            android:textColor="#363636"
+		            android:textSize="16sp"
+		            android:text="外送时段"
+		            android:layout_alignParentLeft="true"
+		            android:layout_marginLeft="16dp"
+		            />
+		        
+			    <ImageView
+			        android:id="@+id/imageview_setting_take_out_time_bucket_arrow"
+			        android:layout_width="wrap_content" 
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/arrow_right_pressed"
+			        android:layout_alignParentRight="true"
+			        android:layout_marginRight="23dp"
+			        android:layout_centerVertical="true"/>
+			    
+			    <TextView
+			        android:id="@+id/tv_setting_take_out_time_bucket_hint"
+			        android:layout_width="wrap_content" 
+			        android:layout_height="60dp"
+			        android:gravity="center_vertical"
+			        android:textSize="18sp"
+			        android:textColor="#898989"
+			        android:text="test"
+			        android:layout_toLeftOf="@id/imageview_setting_take_out_time_bucket_arrow"
+			        android:layout_marginRight="11dp"
+			        />
+    			</RelativeLayout>
+    			
+            
+            
+             <RelativeLayout
+	         android:id="@+id/rl_setting_take_out_set_info"
+	         android:layout_width="630dp"
+	         android:layout_height="60dp"
+	         android:layout_alignParentLeft="true"
+	         android:layout_marginLeft="30dp"
+	         android:layout_below="@id/rl_setting_take_out_time_bucket"
+	         android:layout_marginTop="30dp"
+	         android:background="#ffffff">
+        
+		        <TextView
+		            android:id="@+id/tv_setting_take_out_set_info_tips"
+		            android:layout_width="wrap_content" 
+		            android:layout_height="60dp"
+		            android:gravity="center_vertical"
+		            android:textColor="#363636"
+		            android:textSize="16sp"
+		            android:text="外送条件与外送费"
+		            android:layout_alignParentLeft="true"
+		            android:layout_marginLeft="16dp"
+		            />
+		        
+			    <ImageView
+			        android:id="@+id/imageview_setting_take_out_set_info_arrow"
+			        android:layout_width="wrap_content" 
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/arrow_right_pressed"
+			        android:layout_alignParentRight="true"
+			        android:layout_marginRight="23dp"
+			        android:layout_centerVertical="true"/>
+			    
+			    <TextView
+			        android:id="@+id/tv_setting_take_out_set_info_hint"
+			        android:layout_width="wrap_content" 
+			        android:layout_height="60dp"
+			        android:gravity="center_vertical"
+			        android:textSize="18sp"
+			        android:textColor="#898989"
+			        android:text="test"
+			        android:layout_toLeftOf="@id/imageview_setting_take_out_set_info_arrow"
+			        android:layout_marginRight="11dp"
+			        />
+    			</RelativeLayout>
+        
+    </RelativeLayout>
+    
+
+</RelativeLayout>

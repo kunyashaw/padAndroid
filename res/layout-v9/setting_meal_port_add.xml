@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="630dp"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="630dp"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/rl_setting_add_meal_port_name"
+                android:layout_width="630dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"
+                android:background="#ffffff"
+                >
+
+                <TextView
+                    android:id="@+id/tv_setting_add_meal_port_name_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="13dp"
+                    android:text="出餐台名称"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_setting_add_meal_port_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="35dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#898989"
+                    android:hint="点击设置"
+                    android:textSize="16sp"
+                    android:focusable="true"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="#30898989"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@null"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="23dp"
+                    android:background="@drawable/arrow_right_pressed" />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="43dp"
+                android:hint="建议使用所在位置进行命名，更直观，清晰"
+                android:layout_below="@id/rl_setting_add_meal_port_name"
+                android:layout_marginTop="10dp"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rl_setting_add_meal_port_stamp"
+                android:layout_width="630dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/rl_setting_add_meal_port_name"
+                android:layout_marginTop="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"
+                android:background="#ffffff"
+                >
+
+                <TextView
+                    android:id="@+id/tv_setting_add_meal_port_stamp_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="13dp"
+                    android:text="出餐小票标识"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_setting_add_meal_port_stamp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="35dp"
+                    android:textColor="#898989"
+                    android:textSize="16sp"
+                    android:text="A"
+                    android:textColorHint="#30898989"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_centerVertical="true"
+                    android:focusable="true"
+                    android:background="@android:color/transparent"
+                    android:textCursorDrawable="@null"
+                    android:cursorVisible="true"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageview_setting_layout_meal_port_right_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="23dp"
+                    android:background="@drawable/arrow_right_pressed" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="43dp"
+                android:hint="当有多个出餐口的时候，在出餐小票上快速识别是哪个出餐口的字母表示"
+                android:layout_below="@id/rl_setting_add_meal_port_stamp"
+                android:layout_marginTop="10dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="630dp"
+                android:layout_height="180dp"
+                android:id="@+id/rl_setting_add_meal_port_detail"
+                android:layout_below="@+id/rl_setting_add_meal_port_stamp"
+                android:layout_marginTop="50dp"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl_setting_add_mp_port_printer"
+                    android:layout_width="630dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    android:background="#ffffff"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_setting_add_mp_printer_name_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="13dp"
+                        android:text="小票打印机"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_vertical"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_setting_add_mp_printer_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="35dp"
+                        android:textColor="#898989"
+                        android:textSize="16sp"
+                        android:focusable="true"
+                        android:text="未设置"
+                        android:background="@android:color/transparent"
+                        android:textColorHint="#30898989"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:cursorVisible="true"
+                        android:textCursorDrawable="@null"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="22dp"
+                        android:background="#dddddd"
+                        android:layout_alignParentBottom="true"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="23dp"
+                        android:background="@drawable/arrow_right_pressed" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_setting_add_mp_call_tv"
+                    android:layout_width="630dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    android:background="#ffffff"
+                    android:layout_below="@id/rl_setting_add_mp_port_printer"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_setting_add_mp_call_tv_name_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="13dp"
+                        android:text="叫号设备"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_vertical"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_setting_add_mp_call_tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="35dp"
+                        android:textColor="#898989"
+                        android:textSize="16sp"
+                        android:focusable="true"
+                        android:text="未设置"
+                        android:background="@android:color/transparent"
+                        android:textColorHint="#30898989"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:cursorVisible="true"
+                        android:textCursorDrawable="@null"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="22dp"
+                        android:background="#dddddd"
+                        android:layout_alignParentBottom="true"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="23dp"
+                        android:background="@drawable/arrow_right_pressed" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_setting_add_mp_call_ruls"
+                    android:layout_width="630dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    android:background="#ffffff"
+                    android:layout_below="@id/rl_setting_add_mp_call_tv"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_setting_add_mp_call_rules_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="13dp"
+                        android:text="叫号规则"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_vertical"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_setting_add_mp_call_rules_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="35dp"
+                        android:textColor="#898989"
+                        android:textSize="16sp"
+                        android:focusable="true"
+                        android:text="未设置"
+                        android:background="@android:color/transparent"
+                        android:textColorHint="#30898989"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:layout_centerVertical="true"
+                        android:cursorVisible="true"
+                        android:textCursorDrawable="@null"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="23dp"
+                        android:background="@drawable/arrow_right_pressed" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_setting_add_mp_whether_packed"
+                android:layout_width="630dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/rl_setting_add_meal_port_detail"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"
+                android:background="#ffffff"
+                >
+
+                <TextView
+                    android:id="@+id/tv_setting_add_mp_whether_packed_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="13dp"
+                    android:text="打包出餐台"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/tv_setting_add_mp_whether_packed_tips"
+                    android:layout_marginLeft="5dp"
+                    android:hint="(所有外卖、自助的出餐都有此出餐台负责出餐)"
+                    android:gravity="center_vertical"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp">
+
+                    <com.huofu.RestaurantOS.widget.toggleButton.zcw.togglebutton.ToggleButton
+                        android:id="@+id/tb_setting_add_mp_whether_packed"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_add_mp_delete"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="#dddddd"
+            />
+
+        <Button
+            android:id="@+id/btn_port_list_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/rubish"
+            android:text="删除出餐台"
+            android:textSize="15dp"
+            android:textColor="@color/Powerful"
+            android:clickable="false"
+            android:focusable="false"
+            />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

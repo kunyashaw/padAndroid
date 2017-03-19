@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:test="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <!-- 是否支持指定预约时间 -->
+    <RelativeLayout
+	         android:id="@+id/rl_setting_take_out_delivery_assign_time_supported_toggle"
+	         android:layout_width="630dp"
+	         android:layout_height="60dp"
+	         android:layout_alignParentLeft="true"
+	         android:layout_marginLeft="30dp"
+	         android:layout_alignParentTop="true"
+	         android:layout_marginTop="30dp"
+	         android:background="#ffffff">
+        
+	        <TextView
+	            android:layout_width="wrap_content" 
+	            android:layout_height="60dp"
+	            android:gravity="center_vertical"
+	            android:textColor="#363636"
+	            android:textSize="16sp"
+	            android:text="指定预约送达时间"
+	            android:layout_alignParentLeft="true"
+	            android:layout_marginLeft="16dp"
+	            />
+	        
+		    
+	        <RelativeLayout
+	            android:layout_width="100dp" 
+		        android:layout_height="60dp"
+		        android:layout_alignParentRight="true"
+	            >
+	            
+	                <com.huofu.RestaurantOS.widget.toggleButton.zcw.togglebutton.ToggleButton
+		      		    android:id="@+id/btn_setting_layout_takeout_delivery_assign_time_supported"
+				        android:layout_width="80dp" 
+				        android:layout_height="30dp"
+				        android:layout_centerVertical="true"
+		      		    />
+	          <!--   <com.shanfubaoAndroid.cutomWidget.SlipButton
+			        android:id="@+id/btn_setting_layout_takeout_delivery_assign_time_supported"
+			        android:layout_width="100dp" 
+			        android:layout_height="60dp"
+			        android:layout_centerVertical="true"
+			        test:bg="@drawable/sb_bg"
+		      		test:slipImg="@drawable/sb_slip_img"
+		      		test:slipOn="false" /> -->
+	            
+	        </RelativeLayout>
+	        
+    		</RelativeLayout>
+    		
+    
+    <!-- 外送起送金额 -->
+     <RelativeLayout
+	         android:id="@+id/rl_setting_take_out_min_order_delivery_amount"
+	         android:layout_width="630dp"
+	         android:layout_height="60dp"
+	         android:layout_alignParentLeft="true"
+	         android:layout_marginLeft="30dp"
+	         android:layout_below="@id/rl_setting_take_out_delivery_assign_time_supported_toggle"
+	         android:layout_marginTop="30dp"
+	         android:background="#ffffff">
+        
+		        <TextView
+		            android:id="@+id/tv_setting_take_out_min_order_delivery_amount_tips"
+		            android:layout_width="wrap_content" 
+		            android:layout_height="60dp"
+		            android:gravity="center_vertical"
+		            android:textColor="#363636"
+		            android:textSize="16sp"
+		            android:text="起送金额(元)"
+		            android:layout_alignParentLeft="true"
+		            android:layout_marginLeft="16dp"
+		            />
+		        
+			    
+			    <TextView
+			        android:id="@+id/tv_setting_take_out_min_order_delivery_amount"
+			        android:layout_width="wrap_content" 
+			        android:layout_height="60dp"
+			        android:gravity="center_vertical"
+			        android:textSize="18sp"
+			        android:textColor="#898989"
+			        android:text="test"
+			        android:layout_alignParentRight="true"
+			        android:layout_marginRight="11dp"
+			        />
+    	</RelativeLayout>
+    	
+     <!-- 外送金额 -->
+     <RelativeLayout
+	         android:id="@+id/rl_setting_take_out_delivery_fee"
+	         android:layout_width="630dp"
+	         android:layout_height="60dp"
+	         android:layout_alignParentLeft="true"
+	         android:layout_marginLeft="30dp"
+	         android:layout_below="@id/rl_setting_take_out_min_order_delivery_amount"
+	         android:layout_marginTop="30dp"
+	         android:background="#ffffff">
+        
+		        <TextView
+		            android:id="@+id/tv_setting_take_out_delivery_fee_tips"
+		            android:layout_width="wrap_content" 
+		            android:layout_height="60dp"
+		            android:gravity="center_vertical"
+		            android:textColor="#363636"
+		            android:textSize="16sp"
+		            android:text="外送费(元)"
+		            android:layout_alignParentLeft="true"
+		            android:layout_marginLeft="16dp"
+		            />
+		        
+			    
+			    <TextView
+			        android:id="@+id/tv_setting_take_out_delivery_fee"
+			        android:layout_width="wrap_content" 
+			        android:layout_height="60dp"
+			        android:gravity="center_vertical"
+			        android:textSize="18sp"
+			        android:textColor="#898989"
+			        android:text="test"
+			        android:layout_alignParentRight="true"
+			        android:layout_marginRight="11dp"
+			        />
+    	</RelativeLayout>
+    			
+     
+     <!-- 免外送金额费 -->
+     <RelativeLayout
+	         android:id="@+id/rl_setting_take_out_min_order_free_delivery_amount"
+	         android:layout_width="630dp"
+	         android:layout_height="60dp"
+	         android:layout_alignParentLeft="true"
+	         android:layout_marginLeft="30dp"
+	         android:layout_below="@id/rl_setting_take_out_min_order_free_delivery_amount"
+	         android:layout_marginTop="30dp"
+	         android:background="#ffffff">
+        
+		        <TextView
+		            android:id="@+id/tv_setting_take_out_min_order_free_delivery_amount_tips"
+		            android:layout_width="wrap_content" 
+		            android:layout_height="60dp"
+		            android:gravity="center_vertical"
+		            android:textColor="#363636"
+		            android:textSize="16sp"
+		            android:text="免外送费金额(元)"
+		            android:layout_alignParentLeft="true"
+		            android:layout_marginLeft="16dp"
+		            />
+		        
+			    
+			    <TextView
+			        android:id="@+id/tv_setting_take_out_min_order_free_delivery_amount"
+			        android:layout_width="wrap_content" 
+			        android:layout_height="60dp"
+			        android:gravity="center_vertical"
+			        android:textSize="18sp"
+			        android:textColor="#898989"
+			        android:text="test"
+			        android:layout_alignParentRight="true"
+			        android:layout_marginRight="11dp"
+			        />
+    	</RelativeLayout>
+    	
+     
+       <!-- 免外送金额费 -->
+     <RelativeLayout
+	         android:id="@+id/rl_setting_take_out_ahead_time"
+	         android:layout_width="630dp"
+	         android:layout_height="60dp"
+	         android:layout_alignParentLeft="true"
+	         android:layout_marginLeft="30dp"
+	         android:layout_below="@id/rl_setting_take_out_min_order_free_delivery_amount"
+	         android:layout_marginTop="30dp"
+	         android:background="#ffffff">
+        
+		        <TextView
+		            android:id="@+id/tv_setting_take_out_ahead_time_tips"
+		            android:layout_width="wrap_content" 
+		            android:layout_height="60dp"
+		            android:gravity="center_vertical"
+		            android:textColor="#363636"
+		            android:textSize="16sp"
+		            android:text="提前下单时间"
+		            android:layout_alignParentLeft="true"
+		            android:layout_marginLeft="16dp"
+		            />
+		        
+			    
+			    <TextView
+			        android:id="@+id/tv_setting_take_out_ahead_time"
+			        android:layout_width="wrap_content" 
+			        android:layout_height="60dp"
+			        android:gravity="center_vertical"
+			        android:textSize="18sp"
+			        android:textColor="#898989"
+			        android:text="test"
+			        android:layout_alignParentRight="true"
+			        android:layout_marginRight="11dp"
+			        />
+    	</RelativeLayout>
+    
+
+</LinearLayout>

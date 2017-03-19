@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+      
+    
+   		 <RelativeLayout
+               android:id="@+id/rl_keyboard_setting_dial_close"
+               android:layout_width="100dp"
+               android:layout_height="100dp" 
+               android:layout_alignParentRight="true"
+	           android:layout_alignParentTop="true"
+	           android:visibility="invisible"
+               >
+               
+               <Button
+		           android:id="@+id/button_keyboard_setting_dial_close"
+		           android:layout_width="29dp" 
+		           android:layout_height="29dp"
+		           android:background="@drawable/closed_selector"
+		           android:layout_alignParentRight="true"
+	          	   android:layout_alignParentTop="true"
+		           android:layout_marginTop="15dp"
+	          	   android:layout_marginRight="31dp"
+	           />
+               
+           </RelativeLayout>	
+    
+    
+		    <TextView 
+		        android:id="@+id/textview_setting_keybpard_dial_content_input"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:textSize="32sp"
+		        android:textColor="#363636"
+		        android:gravity="center"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginTop="60dp"
+		        android:background="@android:color/transparent"
+		        android:layout_centerHorizontal="true"
+		        />
+		    
+		    <View
+		        android:id="@+id/view_setting_keybpard_dial_underline"
+		        android:layout_width="250dp"
+		        android:layout_height="1dp" 
+		        android:layout_below="@id/textview_setting_keybpard_dial_content_input"
+		        android:layout_marginTop="13dp"
+		        android:layout_centerHorizontal="true"
+		        android:background="#e1c3bc"
+		        />
+		    
+        
+        
+	        
+	         <Button
+	            android:id="@+id/button_setting_keybpard_dial_num2"
+	            android:layout_width="101dp" 
+	            android:layout_height="101dp"
+	            android:background="@drawable/number_123_button_selector"
+	            android:layout_centerHorizontal="true"
+	            android:layout_below="@id/view_setting_keybpard_dial_underline"
+	            android:layout_marginTop="25dp"
+	            android:text="2"
+	            android:textSize="32sp"
+	            android:textColor="#ff484848"
+	            />
+	         
+	         <Button
+	            android:id="@+id/button_setting_keybpard_dial_num1"
+	            android:layout_width="101dp" 
+	            android:layout_height="101dp"
+	            android:background="@drawable/number_123_button_selector"
+	            android:layout_below="@id/view_setting_keybpard_dial_underline"
+	            android:layout_marginTop="25dp"
+	            android:text="1"
+	            android:textSize="32sp"
+	            android:textColor="#ff484848"
+	            android:layout_toLeftOf="@id/button_setting_keybpard_dial_num2"
+	            android:layout_marginRight="4dp"
+	            />
+	         
+	         <Button
+	            android:id="@+id/button_setting_keybpard_dial_num3"
+	            android:layout_width="101dp" 
+	            android:layout_height="101dp"
+	            android:background="@drawable/number_123_button_selector"
+	            android:layout_below="@id/view_setting_keybpard_dial_underline"
+	            android:layout_marginTop="25dp"
+	            android:text="3"
+	            android:textSize="32sp"
+	            android:textColor="#ff484848"
+	            android:layout_toRightOf="@id/button_setting_keybpard_dial_num2"
+	            android:layout_marginLeft="4dp"
+	            />
+	         
+	        
+	         <Button
+	            android:id="@+id/button_setting_keybpard_dial_num5"
+	            android:layout_width="101dp" 
+	            android:layout_height="101dp"
+	            android:background="@drawable/number_456_button_selector"
+	            android:layout_below="@id/view_setting_keybpard_dial_underline"
+	            android:layout_marginTop="130dp"
+	            android:text="5"
+	            android:textSize="32sp"
+	            android:textColor="#ff484848"
+	            android:layout_centerHorizontal="true"
+	            />
+	         
+	         <Button
+	            android:id="@+id/button_setting_keybpard_dial_num4"
+	            android:layout_width="101dp" 
+	            android:layout_height="101dp"
+	            android:background="@drawable/number_456_button_selector"
+	            android:layout_below="@id/view_setting_keybpard_dial_underline"
+	            android:layout_marginTop="130dp"
+	            android:text="4"
+	            android:textSize="32sp"
+	            android:textColor="#ff484848"
+	            android:layout_toLeftOf="@id/button_setting_keybpard_dial_num5"
+	            android:layout_marginRight="4dp"
+	            />
+	         
+	         <Button
+	            android:id="@+id/button_setting_keybpard_dial_num6"
+	        		android:layout_width="101dp" 
+	            android:layout_height="101dp"
+	            android:background="@drawable/number_456_button_selector"
+	            android:layout_below="@id/view_setting_keybpard_dial_underline"
+	            android:layout_marginTop="130dp"
+	            android:text="6"
+	            android:textSize="32sp"
+	            android:textColor="#ff484848"
+	            android:layout_toRightOf="@id/button_setting_keybpard_dial_num5"
+	            android:layout_marginLeft="4dp"
+	            />
+	         
+	        
+	         <Button
+	            android:id="@+id/button_setting_keybpard_dial_num8"
+	            android:layout_width="101dp" 
+	            android:layout_height="101dp"
+	            android:background="@drawable/number_456_button_selector"
+	            android:layout_below="@id/view_setting_keybpard_dial_underline"
+	            android:layout_marginTop="230dp"
+	            android:text="8"
+	            android:textSize="32sp"
+	            android:textColor="#ff484848"
+	            android:layout_centerHorizontal="true"
+	            />
+	         
+	          <Button
+	            android:id="@+id/button_setting_keybpard_dial_num7"
+	            	android:layout_width="101dp" 
+	            android:layout_height="101dp"
+	            android:background="@drawable/number_789_button_selector"
+	            android:layout_below="@id/view_setting_keybpard_dial_underline"
+	            android:layout_marginTop="230dp"
+	            android:text="7"
+	            android:textSize="32sp"
+	            android:textColor="#ff484848"
+	            android:layout_toLeftOf="@id/button_setting_keybpard_dial_num8"
+	            android:layout_marginRight="4dp"
+	            />
+	         
+	         
+         	<Button
+	            android:id="@+id/button_setting_keybpard_dial_num9"
+	           	android:layout_width="101dp" 
+	            android:layout_height="101dp"
+	            android:background="@drawable/number_789_button_selector"
+	            android:layout_below="@id/view_setting_keybpard_dial_underline"
+	            android:layout_marginTop="230dp"
+	            android:text="9"
+	            android:textSize="32sp"
+	            android:textColor="#ff484848"
+	            android:layout_toRightOf="@id/button_setting_keybpard_dial_num8"
+	            android:layout_marginLeft="4dp"
+	            />
+	         
+	          
+           <Button
+	            android:id="@+id/button_setting_keybpard_dial_num0"
+	            android:layout_width="101dp" 
+	            android:layout_height="101dp"
+	            android:background="@drawable/number_0_button_selector"
+	            android:layout_below="@id/view_setting_keybpard_dial_underline"
+	            android:layout_marginTop="330dp"
+	            android:text="0"
+	            android:textSize="32sp"
+	            android:textColor="#ff484848"
+	            android:layout_centerHorizontal="true"
+	            />
+	           
+	          <Button
+	            android:id="@+id/button_setting_keyboard_dial_dot"
+	            android:layout_width="101dp" 
+	            android:layout_height="101dp"
+	            android:background="@drawable/number_0_button_selector"
+	            android:layout_below="@id/view_setting_keybpard_dial_underline"
+	            android:layout_marginTop="330dp"
+	            android:layout_toLeftOf="@id/button_setting_keybpard_dial_num0"
+	            android:layout_marginRight="4dp"
+	            android:text="."
+	            android:textSize="18sp"
+	            android:textColor="#ff484848"
+	            android:gravity="center"
+	            />
+	           
+	           
+	         <Button
+	            android:id="@+id/button_setting_keyboard_dial_delete"
+	            android:layout_width="101dp" 
+	            android:layout_height="101dp"
+	            android:background="@android:color/transparent"
+	            android:layout_below="@id/view_setting_keybpard_dial_underline"
+	            android:layout_marginTop="330dp"
+	            android:layout_toRightOf="@id/button_setting_keybpard_dial_num0"
+	            android:layout_marginLeft="4dp"
+	            android:text="退格"
+	            android:textSize="18sp"
+	            android:textColor="#ff484848"
+	            android:gravity="center"
+	            />
+	         
+	         <View
+	             android:layout_width="match_parent" 
+	             android:layout_height="0.5dp"
+	             android:background="#cbaf93"
+	             android:layout_alignParentBottom="true"
+	             android:layout_marginBottom="115dp"
+	             />
+	         
+	         <View
+	             android:layout_width="0.5dp"
+	             android:layout_height="115dp"
+	             android:background="#cbaf93"
+	             android:layout_alignParentBottom="true"
+	             android:layout_centerHorizontal="true" 
+	             />
+	         
+	         <Button
+	             android:id="@+id/button_setting_keybpard_dial_cancel"
+	             android:layout_width="200dp"
+	             android:layout_height="115dp"
+	             android:background="@android:color/transparent"
+	             android:textSize="20sp"
+        			 android:textColor="@color/Powerful"
+        			 android:text="取消"
+        			 android:gravity="center"
+        			 android:layout_alignParentLeft="true"
+        			 android:layout_alignParentBottom="true"
+	             />
+             
+             <Button
+	             android:id="@+id/button_setting_keybpard_dial_enter"
+	             android:layout_width="200dp"
+	             android:layout_height="115dp"
+	             android:background="@android:color/transparent"
+	             android:textSize="20sp"
+        			 android:textColor="@color/Ponceau"
+        			 android:textStyle="bold"
+        			 android:text="确认"
+        			 android:gravity="center"
+        			 android:layout_alignParentRight="true"
+        			 android:layout_alignParentBottom="true"
+	             />
+	         
+
+</RelativeLayout>

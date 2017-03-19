@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--火付云餐饮OS-->
+    <string name="app_name"> [测]5weiOS</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="push_meal1_background_color">#ff6BA4FA</string>
+    
+    <string name="head">这里是HeadView</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="readyToJumpToLogin">准备跳转到登陆界面</string>
+    <string name="loadingQrcode">加载二维码</string>
+    <string name="stockSupplyPriodicTips">名词解释：\n
+        1.计划：是指根据产品周期库存设置所指定的计划供应数量\n
+        2.供应：经营过程中被调整过的实际供应数量，计算公式为\"供应=已出餐+剩余\"\n
+        3.预定：本时段用户已下单支付，但是尚未取号的产品数量\n
+        4.已出餐：本时段已打印出餐小票（或自动出餐）的产品数量\n
+        5.待出餐：本时段尚未打印出餐小票（也未出餐）的产品数量\n</string>
+     <string name="stockSupplyNormalTips">名词解释：\n
+        1.总预定：所有已下单支付，但是尚未取号的产品数量\n
+        2.本时段预定：本时段已下单支付，但是尚未取号的产品数量\n
+        3.已出餐：本时段已打印出餐小票（或自动出餐）的产品数量\n
+        4.待出餐：本时段尚未打印出餐小票（也未出餐）的产品数量\n</string>
+    <string name="stockSupplyClosedTips">名词解释：\n
+        1.预定：本时段已下单支付，但是尚未取号/出餐的产品数量\n
+        2.已出餐：本时段已打印出餐小票（或自动出餐）的产品数量\n
+        3.待出餐：本时段尚未打印出餐小票（也未出餐）的产品数量\n</string>
+    <string name="stockSupplyOpenPeriodicTips">
+        开启周期库存设置，可以按照每个不同的营业时间段（如：早餐、午餐、晚餐）单独设置销售限制。每个可销售时段的销售量，会自动按照以下设置进行限量销售。
+        \n</string>
+    <string name="stockSupplyOpenNormalTips">
+        关闭周期库存，即使用非周期库存的模式。产品的销售将受当前库存数量的限制，所有营业时间段共享同一个库存。当产品出餐时，系统会自动扣减库存。
+        \n</string>
+    <string name="activateByQrCodeTips">请使用微信扫码获取授权</string>
+    <string name="launchPadAllFuncName">全部</string>
+    <string name="launchPadMealDoneName">出餐</string>
+    <string name="launchPadSelfTakeUpName">自助取号</string>
+    <string name="launchPadSettingsName">设置</string>
+    <string name="launchPadStockSupplyName">库存盘点</string>
+    <string name="launchPadStockPlanName">库存计划</string>
+    <string name="launchPadDeliveryName">外送</string>
+    <string name="launchPadMenuEditName">电视菜单编辑</string>
+
+    <string name="Monday">周一</string>
+    <string name="Tuesday">周二</string>
+    <string name="Wednesday">周三</string>
+    <string name="Thursday">周四</string>
+    <string name="Friday">周五</string>
+    <string name="Saturday">周六</string>
+    <string name="Sunday">周日</string>
+
+    <string name="breakfast">早餐</string>
+    <string name="launch">午餐</string>
+    <string name="dinner">晚餐</string>
+
+    <string name="zero">0</string>
+    <string name="one">1</string>
+
+    <string name="downloading">正在下载</string>
+
+
+</resources>
+
+

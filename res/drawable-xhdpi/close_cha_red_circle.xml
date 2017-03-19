@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    >
+   <!-- 绘制外部的圆圈 -->
+   <item>
+		   <shape 
+		    android:shape="oval"
+		    android:useLevel="false" >
+		    
+		    <solid android:color="#ffffff" />
+		    
+		    <padding 
+				android:left="2dp" 
+				android:top="1dp" 
+				android:right="2dp" 
+				android:bottom="1dp" />
+		    <stroke
+		        android:width="1dp"
+		        android:color="#ff0000" />
+		    
+		    <size android:width="30dp"
+		          android:height="30dp" />
+			</shape>
+	</item> 
+	
+   <item >
+       <rotate
+           android:fromDegrees="45"
+           android:toDegrees="45"
+           android:pivotX="50%"
+           android:pivotY="50%"  
+           >
+		    
+           <shape
+               android:shape="line"
+               android:top="1dp"
+               >
+               
+               <stroke
+                   android:width="0.5dp"
+                   android:color="#ff0000" 
+                   />
+               
+            </shape>
+       
+       </rotate>
+   </item>
+   
+   
+    <item >
+       <rotate
+           android:fromDegrees="135"
+           android:toDegrees="135"
+           android:pivotX="50%"
+           android:pivotY="50%"  
+           >
+		    
+           <shape
+               android:shape="line"
+               android:top="1dp"
+               >
+               <stroke
+                   android:width="0.5dp"
+                   android:color="#ff0000" 
+                   />
+            </shape>
+       
+       </rotate>
+   </item>
+    
+</layer-list>
+

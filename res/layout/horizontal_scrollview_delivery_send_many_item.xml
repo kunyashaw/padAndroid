@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="125dp"
+    android:layout_height="93dp"
+     >
+    
+        <RelativeLayout
+            android:id="@+id/rl_horizontal_item_child"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            >
+            
+             <RelativeLayout
+		        android:layout_width="125dp"
+		        android:layout_height="93dp" 
+		        android:background="#ffffff"
+				android:layout_alignParentTop="true"
+				android:layout_marginTop="10dp"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="10sp"        
+		        >
+		        <TextView
+				    android:id="@+id/tv_horizontal_scrollview_take_serinal_num"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:textSize="24sp"
+				    android:textColor="#484848"
+				   	android:gravity="center_horizontal"
+				    android:layout_centerHorizontal="true"
+				    android:layout_alignParentTop="true"
+				    android:layout_marginTop="20dp"/>
+		        
+		        <TextView
+		            android:id="@+id/tv_horizontal_scrollview_address"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:textSize="14sp"
+		            android:textColor="#565656"
+		            android:gravity="center_horizontal"
+		            android:layout_alignParentTop="true"
+		            android:layout_marginTop="58dp"
+		            android:ellipsize="end"
+		            android:singleLine="true"
+		            android:maxWidth="120dp"
+		            />
+		        
+		    </RelativeLayout>
+            
+        </RelativeLayout>
+    
+
+</RelativeLayout>

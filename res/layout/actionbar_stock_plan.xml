@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:background="@color/ActionBarBackground">
+
+    <RelativeLayout
+        android:id="@+id/rl_action_bar_stock_plan_menu"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/button_action_bar_stock_plan_menu"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/menu_icon_seletor" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="70dp"
+        android:text="产品列表"
+        android:textColor="@color/Powerful"
+        android:textSize="20dp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="232.5dp"
+        android:alpha="0.2"
+        android:background="#000000" />
+
+    <Button
+        android:id="@+id/btn_action_bar_stock_plan_now_choose"
+        android:layout_width="768dp"
+        android:layout_height="44dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="256dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="牛肉面（份）"
+        android:textColor="@color/Powerful"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

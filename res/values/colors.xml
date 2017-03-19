@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark">#FF222222</color>
+    <color name="light">#FFEEEEEE</color>
+    <color name="actionBarBackground">#FFdf6448</color>
+    <color name="grey">#cccccc</color>
+    <color name="orange1">#ff9900</color>
+    <color name="orange2">#ff6600</color>
+    <color name="orange3">#ff3300</color>
+    <color name="header_bg_common">#323a45</color>
+    <color name="title_txt_color">#f1f1f3</color>
+    <color name="circle_color">#323a45</color>
+    <color name="ring_color">#14b9d6</color>
+    
+    
+    <color name="text_color">#FFFFFF</color>
+    <color name="divider_color">#11000000</color>
+    <color name="msg_color">#FFFFFFFF</color>
+    <color name="dialog_bg">#ffe74c3c</color>
+    <color name="btn_press_color">#FFa5281b</color>
+    <color name="btn_unpress_color">#FFc0392b</color>
+    <color name="action_bar_background_color">#f0f0f0</color>
+    
+    <color name="Forceful">#363636</color>
+    <color name="Strong">#484848</color>
+    <color name="Powerful">#565656</color>
+    <color name="Dusky">#898989</color>
+    <color name="Pale">#b1b1b1</color>
+    <color name="Constrast">#ffffff</color>
+    <color name="Constrast_2">#90ffffff</color>
+    <color name="Soft">#40FFFFFF</color>
+    <color name="Ponceau">#DF6448</color>
+    <color name="Blue">#4385f6</color>
+    <color name="Amber">#ffa200</color>
+    <color name="Green">#7ccc2e</color>
+    <color name="Black">#000000</color>
+    
+    <color name="Constrast_3">#ebeef1</color>
+    <color name="ActionBarBackground">#f0f0f0</color>
+    <color name="BackgroudColor">#ebeef1</color>
+    <color name="DividerBackgroundColor">#dddddd</color>
+    <color name="DilaogBackgroundColor">#b0000000</color>
+    <color name="MealDoneBackgroundColor">#47505a</color>
+
+</resources>

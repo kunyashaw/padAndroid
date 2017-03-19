@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="231dp"
+    android:layout_height="170dp" 
+	android:background="@drawable/gird_waiting_push_item_top_corner">
+        
+     <TextView
+	    android:id="@+id/textview_grdiview_history_item_serinal_num"
+	    android:layout_width="wrap_content"
+	    android:layout_height="42dp"
+	    android:text="113-1"
+	    android:textColor="#363636"
+	    android:textSize="20sp"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="18dp"
+		 android:layout_alignParentTop="true"
+		 android:gravity="center_vertical"
+	    />
+     
+     <TextView
+         android:id="@+id/textview_grdiview_history_item_whether_packaged"
+         android:layout_width="wrap_content" 
+         android:layout_height="42dp"
+         android:layout_toRightOf="@id/textview_grdiview_history_item_serinal_num"
+         android:layout_marginLeft="15dp"
+         android:layout_alignParentTop="true"
+         android:gravity="center_vertical"
+         android:textColor="#b1b1b1"
+         android:textSize="15sp"
+         />
+     
+     
+      <TextView
+         android:id="@+id/textview_grdiview_history_item_time"
+         android:layout_width="wrap_content" 
+         android:layout_height="42dp"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginRight="18dp"
+         android:gravity="center_vertical"
+         android:textColor="#b1b1b1"
+         android:textSize="14sp"
+         />
+     
+     
+     
+     
+     <!-- android:layout_marginTop="10dp" --> 
+	 
+     <View
+         android:id="@+id/view_gridview_history_item_seperator_line"
+         android:layout_width="match_parent" 
+         android:layout_height="0.5dp"
+         android:background="#dddddd"
+         android:layout_below="@id/textview_grdiview_history_item_serinal_num"
+         />
+	    
+	<TextView
+	    android:id="@+id/button_gridview_history_item_order_content"
+	    android:layout_width="match_parent"
+	    android:layout_height="53dp"
+	    android:layout_below="@id/view_gridview_history_item_seperator_line"
+	    android:layout_marginTop="15dp"
+	    android:textColor="#898989"
+	    android:textSize="16sp"
+	    android:background="#ffffff"
+	    android:text="馄饨×2"
+	    android:gravity="left|top"
+	    android:layout_alignParentLeft="true"
+		android:layout_marginLeft="18dp"
+		 android:layout_alignParentRight="true"
+		android:layout_marginRight="18dp"
+		android:lines="2"
+		android:ellipsize="end"
+	    />
+        
+	<!--  <View
+         android:id="@+id/view_gridview_history_item_seperator_line2"
+         android:layout_width="match_parent" 
+         android:layout_height="0.5dp"
+         android:background="#dddddd"
+         android:layout_below="@id/button_gridview_history_item_order_content"
+         android:layout_marginTop="15dp"
+         /> -->
+     
+     <Button
+        android:id="@+id/button_gridview_history_item_call"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/button_gridview_history_item_order_content"
+        android:layout_marginTop="15dp"
+        android:textColor="#4385f6"
+        android:textSize="16sp"
+        android:text="叫号"
+        android:gravity="center"
+        android:background="@drawable/gridview_waiting_push_item_no_corner_selector"
+        />
+   <!-- android:background="@drawable/speaker_selector" -->
+	
+    
+
+</RelativeLayout>

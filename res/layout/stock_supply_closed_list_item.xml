@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="842dp"
+    android:layout_height="141dp"
+    android:minHeight="141dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/stock_supply_closed_list_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="33dp"
+        android:text="肉夹馍"
+        android:textSize="32dp"
+        android:textColor="@color/Powerful"
+        />
+
+    <TextView
+        android:id="@+id/textview_stock_suppply_closed_list_item_presell_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stock_supply_closed_list_item_name"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="33dp"
+        android:text="预定"
+        android:textSize="16sp"
+        android:textColor="@color/Pale"
+        />
+
+    <TextView
+        android:id="@+id/textview_stock_suppply_closed_list_item_presell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/Forceful"
+        android:text="0"
+        android:layout_below="@id/stock_supply_closed_list_item_name"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/textview_stock_suppply_closed_list_item_presell_tips"
+        android:layout_marginLeft="8dp"
+        />
+
+    <TextView
+        android:id="@+id/textview_stock_supply_closed_list_item_already_pushed_meal_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stock_supply_closed_list_item_name"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="196dp"
+        android:text="已出餐"
+        android:textSize="16sp"
+        android:textColor="@color/Pale"
+        />
+
+    <TextView
+        android:id="@+id/textview_stock_supply_closed_list_item_already_pushed_meal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/Forceful"
+        android:text="0"
+        android:layout_below="@id/stock_supply_closed_list_item_name"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/textview_stock_supply_closed_list_item_already_pushed_meal_tips"
+        android:layout_marginLeft="8dp"
+        />
+
+
+    <TextView
+        android:id="@+id/textview_stock_supply_closed_list_item_waiting_push_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stock_supply_closed_list_item_name"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="359dp"
+        android:text="待出餐"
+        android:textSize="16sp"
+        android:textColor="@color/Pale"
+        />
+
+    <TextView
+        android:id="@+id/textview_stock_supply_closed_list_item_waiting_push"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/Forceful"
+        android:text="0"
+        android:layout_below="@id/stock_supply_closed_list_item_name"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/textview_stock_supply_closed_list_item_waiting_push_tips"
+        android:layout_marginLeft="8dp"
+        />
+
+
+    <com.huofu.RestaurantOS.widget.toggleButton.zcw.togglebutton.ToggleButton
+        android:id="@+id/toggleButton_stock_supply_closed_list_item_switch"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="35dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:layout_toLeftOf="@id/toggleButton_stock_supply_closed_list_item_switch"
+        android:layout_marginRight="17dp"
+        android:textSize="16sp"
+        android:textColor="@color/Powerful"
+        android:text="立即开启库存"
+        android:gravity="center_vertical"
+        />
+
+
+
+</RelativeLayout>

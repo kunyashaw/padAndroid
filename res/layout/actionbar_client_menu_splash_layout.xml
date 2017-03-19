@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp" >
+
+    <RelativeLayout
+        android:id="@+id/rl_action_bar_client_menu_splash"
+        android:layout_width="58dp"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        >
+    
+	    <Button
+	        android:id="@+id/btn_action_bar_client_menu_splash"
+	        android:layout_width="24dp" 
+	        android:layout_height="24dp"
+	        android:background="@drawable/menu_icon_seletor"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginTop="15dp"
+	        android:layout_centerVertical="true"
+	        />
+    
+    </RelativeLayout>
+    
+        
+     
+
+</RelativeLayout>

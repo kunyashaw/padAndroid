@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@android:color/transparent"
+    android:layout_height="400dp" >
+    
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="200dp"
+        android:background="#fe4f30"
+        android:weightSum="1" 
+        >
+        
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05" 
+            android:background="@android:color/transparent"
+            />
+        
+        <Button
+            android:id="@+id/button_last_week_new_from_history_menu_way_dialog"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" 
+            android:layout_weight="0.425"
+            android:background="#d54f30"
+            android:text="上周菜单拷贝到本周"
+            />
+        
+         <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:background="@android:color/transparent" 
+            />
+         
+           <Button
+            android:id="@+id/button_customed_new_from_history_menu_way_dialog"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" 
+            android:layout_weight="0.425"
+            android:background="#d54f30"
+            android:text="本周菜单拷贝到下周"
+            />
+         
+          <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05" 
+            android:background="@android:color/transparent"
+            />
+        
+    </LinearLayout>
+
+</RelativeLayout>

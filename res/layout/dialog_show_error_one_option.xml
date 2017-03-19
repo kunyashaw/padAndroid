@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1024dp"
+    android:layout_height="768dp"
+    android:background="#b0000000">
+
+    <RelativeLayout
+        android:layout_width="557dp"
+        android:layout_height="301dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/popup_window">
+
+
+        <TextView
+            android:id="@+id/tv_dialog_error_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="65dp"
+            android:gravity="center"
+            android:lines="3"
+            android:textColor="@color/Forceful"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/btn_dialog_error_close"
+            android:layout_width="194dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="43dp"
+            android:background="@drawable/btn_blue_solid"
+            android:gravity="center"
+            android:text="关闭"
+            android:textColor="@color/Constrast"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

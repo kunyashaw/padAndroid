@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="630dp"
+    android:layout_height="match_parent"
+     >
+    
+    <RelativeLayout
+        android:id="@+id/rl_setting_printer_name"
+        android:layout_width="630dp" 
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:background="#ffffff"
+        >
+        
+      	<TextView
+	    	    android:id="@+id/tv_setting_printer_edit_info_name_tips"
+	    	    android:layout_width="wrap_content" 
+	    	    android:layout_height="60dp"
+	    	    android:layout_alignParentLeft="true"
+	    	    android:layout_marginLeft="13dp"
+	    	    android:text="打印机名称"
+	    	    android:layout_centerVertical="true"
+	    	    android:gravity="center_vertical"
+	    	    android:textColor="#000000"
+    	    		android:textSize="16sp"
+	    	    />
+	    	
+	    	<EditText
+	    	    android:id="@+id/et_setting_printer_edit_info_name"
+	    	    android:layout_width="200dp"
+	    	    android:layout_height="35dp"
+	    	    android:layout_alignParentRight="true"
+	    	    android:layout_marginRight="30dp"
+	    	    android:layout_centerVertical="true"
+	    	    android:textColor="#898989"
+    	    		android:textSize="16sp"
+    	    		android:focusable="true"
+    	    		android:background="@android:color/transparent"
+    	    		android:textColorHint="#30898989"
+    	    		android:gravity="bottom|center_horizontal"
+    	    		android:cursorVisible="true"
+    	    		android:textCursorDrawable="@null"
+	    	    />
+	    	
+		    	<View
+	        android:layout_width="200dp"
+	        android:layout_height="1dp" 
+	        android:layout_below="@id/et_setting_printer_edit_info_name"
+	        android:layout_marginTop="5dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="30dp"
+	        android:background="#e1c3bc"
+	        />
+        
+    </RelativeLayout>
+   
+  	<RelativeLayout
+        android:id="@+id/rl_setting_printer_ip"
+        android:layout_width="630dp" 
+        android:layout_height="60dp"
+        android:layout_below="@+id/rl_setting_printer_name"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:background="#ffffff"
+        >
+    	
+    	 <TextView
+    	    android:id="@+id/tv_setting_printer_edit_info_ip_tips"
+    	    android:layout_width="wrap_content" 
+    	    android:layout_height="60dp"
+    	    android:layout_alignParentLeft="true"
+    	    android:layout_marginLeft="13dp"
+    	    android:text="打印机IP"
+    	    android:textColor="#000000"
+    	    android:textSize="16sp"
+    	    android:gravity="center_vertical"
+    	    android:layout_centerVertical="true"
+    	    />
+    	
+    	<EditText
+    	    android:id="@+id/et_setting_printer_edit_info_ip"
+    	    android:layout_width="200dp"
+    	    android:layout_height="35dp"
+    	    android:layout_alignParentRight="true"
+    	    android:layout_marginRight="30dp"
+    	    android:textColor="#898989"
+    	    android:textSize="16sp"
+    	    android:textColorHint="#30898989"
+    	    android:gravity="bottom|center_horizontal"
+    	    android:focusable="true"
+    	    android:background="@android:color/transparent"
+    	    android:textCursorDrawable="@null"
+    	    android:cursorVisible="true"
+			android:inputType="number"
+			android:digits="0123456789."
+    	    />
+    	
+    	  <View
+        android:layout_width="200dp"
+        android:layout_height="1dp" 
+        android:layout_below="@id/et_setting_printer_edit_info_ip"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:background="#e1c3bc"
+        />
+    	
+    	
+    	</RelativeLayout>
+
+    	<Button
+    	    android:id="@+id/btn_setting_printer_edit_delete"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="60dp" 
+    	    android:text="删除打印机配置"
+    	    android:textColor="#ffffff"
+    	    android:textSize="16sp"
+    	    android:background="#df6448"
+    	    android:layout_alignParentBottom="true"
+    	    android:layout_centerHorizontal="true"
+    	    />	
+    	
+
+</RelativeLayout>

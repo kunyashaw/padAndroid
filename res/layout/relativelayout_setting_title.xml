@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_setting_title"
+    android:layout_width="334dp"
+    android:layout_height="50dp"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+    <ImageView
+        android:id="@+id/imageview_setting_title_icon"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="22dp"
+        android:layout_centerVertical="true"
+        />
+    
+    <TextView
+        android:id="@+id/textview_setting_title_text"
+        android:layout_width="wrap_content" 
+        android:layout_height="50dp"
+        android:textSize="16sp"
+        android:textColor="#363636"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/imageview_setting_title_icon"
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        />
+    
+    <ImageView
+        android:id="@+id/imageview_setting_title_right_arrow"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:background="@drawable/arrow_right_pressed"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="23dp"
+        android:layout_centerVertical="true"
+        />
+    
+    
+    <TextView
+        android:id="@+id/textview_setting_title_hint"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#898989"
+        android:layout_toLeftOf="@id/imageview_setting_title_right_arrow"
+        android:layout_marginRight="11dp"
+        android:layout_centerVertical="true"
+        />
+    
+    <View
+        android:layout_width="match_parent" 
+        android:layout_height="0.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="22dp"
+        android:background="#dddddd"
+        android:layout_alignParentBottom="true"
+        />
+    
+
+</RelativeLayout>

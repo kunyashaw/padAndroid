@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      	android:layout_width="1024dp"
+		android:layout_height="match_parent"
+    		android:background="#b0000000"
+    		>
+    
+    <RelativeLayout 
+        android:layout_width="600dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="#f8f8f8"
+        >
+    
+      
+       	<RelativeLayout
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="44dp"
+	    	    android:layout_alignParentTop="true"
+	    	    android:background="#ffffff">
+    	    
+	    	    <Button
+	    	        android:id="@+id/button_delivery_order_detial_info_close"
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_height="wrap_content"
+	    	        android:layout_centerVertical="true"
+	    	        android:layout_alignParentRight="true"
+	    	        android:layout_marginRight="20dp"
+	    	        android:background="@android:color/transparent"
+	    	        android:text="关闭"
+	    	        android:textSize="16dp"
+	    	        android:textColor="#4385f6" 
+	    	        />
+	    	    
+	    	    <TextView
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_height="wrap_content"
+	    	        android:text="订单详情"
+	    	        android:textSize="16dp"
+	    	        android:textColor="#565656"
+	    	        android:textStyle="bold"
+	    	        android:layout_centerHorizontal="true"
+	    	        android:layout_centerVertical="true"
+	    	        />
+    	    
+    	</RelativeLayout>
+      
+	
+	
+       	<RelativeLayout
+       	    android:layout_width="265dp"
+       	    android:layout_height="550dp"
+       	    android:layout_alignParentTop="true"
+       	    android:layout_marginTop="73dp"
+       	    android:layout_alignParentLeft="true"
+       	    android:layout_marginLeft="28dp"
+       	    android:background="#ffffff" 
+       	    >
+       	
+		      <TextView
+		          android:id="@+id/tv_delivery_order_info_detail_content_serial"
+		          android:layout_width="230dp"
+		          android:layout_height="wrap_content"
+		          android:textSize="20sp"
+		          android:textColor="#363636"
+		          android:textStyle="bold"
+		          android:gravity="center"
+		          android:layout_alignParentTop="true"
+		          android:layout_marginTop="20dp"
+		          android:layout_alignParentLeft="true"
+		          android:layout_marginLeft="20dp" 
+		          />
+		      
+		        <TextView
+		          android:id="@+id/tv_delivery_order_info_detail_content_status"
+		          android:layout_width="230dp"
+		          android:layout_height="wrap_content"
+		          android:textSize="15sp"
+		          android:textColor="#b1b1b1"
+		          android:gravity="center"
+		          android:layout_alignParentTop="true"
+		          android:layout_marginTop="45dp"
+		          android:layout_centerHorizontal="true"
+		          />
+		      
+		        
+          <View
+              android:id="@+id/delivery_line_left_1"
+              android:layout_width="250dp"
+              android:layout_height="0.5dp"
+              android:layout_below="@id/tv_delivery_order_info_detail_content_status"
+              android:layout_marginTop="10dp"
+              android:layout_centerHorizontal="true"
+              android:background="#d2d2d2" 
+              />
+		      
+		      <ListView
+		          android:id="@+id/listview_delivery_order_detail_info_charge_items"
+		          android:layout_width="230dp"
+		          android:layout_height="wrap_content"
+		          android:layout_below="@id/delivery_line_left_1"
+		          android:layout_marginTop="10dp"
+		          android:layout_alignParentLeft="true"
+		          android:layout_marginLeft="60dp"
+		          />	    
+          
+      </RelativeLayout>
+         
+       	<ScrollView
+       	     android:layout_width="265dp"
+       	    android:layout_height="550dp"
+       	    android:layout_alignParentTop="true"
+       	    android:layout_marginTop="73dp"
+       	    android:layout_alignParentRight="true"
+       	    android:layout_marginRight="28dp"
+       	    android:background="#ffffff"
+       	    >
+       	    
+  	    <RelativeLayout
+       	   android:layout_width="265dp"
+       	   android:layout_height="550dp"
+       	    >
+		
+          <TextView
+              android:id="@+id/tv_delivery_order_detail_address_tips"
+              android:layout_width="wrap_content" 
+              android:layout_height="30dp"
+              android:text="外送地址:"
+              android:textSize="18sp"
+              android:textColor="#b1b1b1"
+              android:layout_alignParentTop="true"
+              android:layout_marginTop="20dp"
+              android:layout_alignParentLeft="true"
+              android:layout_marginLeft="10dp"
+              android:gravity="right|center_vertical"
+              />
+          
+          <TextView
+              android:id="@+id/tv_delivery_order_detail_address"
+              android:layout_width="120dp" 
+              android:layout_height="30dp"
+              android:textSize="18sp"
+              android:textColor="#565656"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="10dp"
+              android:layout_alignParentTop="true"
+              android:layout_marginTop="20dp"
+            	  android:gravity="right" 
+               android:ellipsize="marquee"
+               android:marqueeRepeatLimit="marquee_forever"
+               android:scrollHorizontally="true"
+               android:focusable="true"
+               android:focusableInTouchMode="true"
+               android:singleLine="true"
+              />
+          
+            <TextView
+              android:id="@+id/tv_delivery_order_detail_contact_person_tips"
+              android:layout_width="wrap_content" 
+              android:layout_height="30dp"
+              android:text="联系人:"
+              android:textSize="18sp"
+              android:textColor="#b1b1b1"
+              android:layout_below="@id/tv_delivery_order_detail_address_tips"
+              android:layout_marginTop="5dp"
+              android:layout_alignParentLeft="true"
+              android:layout_marginLeft="10dp"
+              android:gravity="right|center_vertical"
+              />
+          
+          <TextView
+              android:id="@+id/tv_delivery_order_detail_contact_person"
+              android:layout_width="wrap_content" 
+              android:layout_height="30dp"
+              android:text=""
+              android:textSize="18sp"
+              android:textColor="#565656"
+              android:gravity="left"
+              android:layout_below="@id/tv_delivery_order_detail_address"
+              android:layout_marginTop="5dp"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="10dp"
+              />
+          
+             <TextView
+              android:id="@+id/tv_delivery_order_detail_contact_phone_tips"
+              android:layout_width="wrap_content" 
+              android:layout_height="30dp"
+              android:text="联系电话:"
+              android:textSize="18sp"
+              android:textColor="#b1b1b1"
+              android:layout_below="@id/tv_delivery_order_detail_contact_person_tips"
+              android:layout_marginTop="5dp"
+               android:layout_alignParentLeft="true"
+              android:layout_marginLeft="10dp"
+              android:gravity="right|center_vertical"
+              />
+          
+          <TextView
+              android:id="@+id/tv_delivery_order_detail_contact_phone"
+              android:layout_width="wrap_content" 
+              android:layout_height="30dp"
+              android:text=""
+              android:textSize="18sp"
+              android:textColor="#565656"
+              android:gravity="left"
+              android:layout_below="@id/tv_delivery_order_detail_contact_person"
+               android:layout_marginTop="5dp"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="10dp"
+              />
+          
+            <TextView
+              android:id="@+id/tv_delivery_order_detail_invoce_tips"
+              android:layout_width="wrap_content" 
+              android:layout_height="30dp"
+              android:text="发票需求:"
+              android:textSize="18sp"
+              android:textColor="#b1b1b1"
+              android:layout_below="@id/tv_delivery_order_detail_contact_phone_tips"
+              android:layout_marginTop="5dp"
+              android:layout_alignParentLeft="true"
+              android:layout_marginLeft="10dp"
+              android:gravity="right|center_vertical"
+              />
+          
+            <TextView
+                android:id="@+id/tv_delivery_order_detail_invoce"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:textSize="18sp"
+                android:textColor="#565656"
+                android:layout_below="@id/tv_delivery_order_detail_contact_phone"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+             	android:layout_marginRight="10dp"
+                android:gravity="left" 
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:singleLine="true"
+                />
+          
+          
+            <TextView
+              android:id="@+id/tv_delivery_order_detail_a1ssign_tips"
+              android:layout_width="wrap_content" 
+              android:layout_height="30dp"
+              android:text="预约送达时间:"
+              android:textSize="18sp"
+              android:textColor="#b1b1b1"
+              android:layout_below="@id/tv_delivery_order_detail_invoce_tips"
+              android:layout_marginTop="5dp"
+              android:layout_alignParentLeft="true"
+              android:layout_marginLeft="10dp"
+              android:gravity="right|center_vertical"
+              />
+          
+          <TextView
+              android:id="@+id/tv_delivery_order_detail_assign"
+              android:layout_width="120dp" 
+              android:layout_height="30dp"
+              android:text=""
+              android:textSize="18sp"
+              android:textColor="#565656"
+              android:gravity="left"
+              android:layout_below="@id/tv_delivery_order_detail_invoce"
+              android:layout_marginTop="5dp"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="10dp"
+               android:ellipsize="marquee"
+               android:marqueeRepeatLimit="marquee_forever"
+               android:scrollHorizontally="true"
+               android:focusable="true"
+               android:focusableInTouchMode="true"
+               android:singleLine="true"
+              />
+          
+          
+          <View
+              android:id="@+id/delivery_line_right_1"
+              android:layout_width="250dp"
+              android:layout_height="0.5dp"
+              android:layout_below="@id/tv_delivery_order_detail_assign"
+              android:layout_marginTop="10dp"
+              android:layout_centerHorizontal="true"
+              android:background="#d2d2d2" 
+              />
+          
+            
+            <TextView
+              android:id="@+id/tv_delivery_order_detail_pay_order_price_tips"
+              android:layout_width="wrap_content" 
+              android:layout_height="30dp"
+              android:text="订单金额:"
+              android:textSize="18sp"
+              android:textColor="#b1b1b1"
+              android:layout_below="@id/delivery_line_right_1"
+              android:layout_marginTop="10dp"
+              android:layout_alignParentLeft="true"
+              android:layout_marginLeft="10dp"
+              android:gravity="right|center_vertical"
+              />
+          
+          <TextView
+              android:id="@+id/tv_delivery_order_detail_pay_order_price"
+              android:layout_width="wrap_content" 
+              android:layout_height="30dp"
+              android:text=""
+              android:textSize="18sp"
+              android:textColor="#565656"
+              android:gravity="left"
+              android:layout_below="@id/delivery_line_right_1"
+              android:layout_marginTop="5dp"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="10dp"
+              />
+          
+            <TextView
+              android:id="@+id/tv_delivery_order_detail_terminal_coupon_tips"
+              android:layout_width="wrap_content" 
+              android:layout_height="30dp"
+              android:text="终端优惠:"
+              android:textSize="18sp"
+              android:textColor="#b1b1b1"
+              android:layout_below="@id/tv_delivery_order_detail_pay_order_price_tips"
+              android:layout_marginTop="5dp"
+              android:layout_alignParentLeft="true"
+              android:layout_marginLeft="10dp"
+              android:gravity="right|center_vertical"
+              />
+          
+          <TextView
+              android:id="@+id/tv_delivery_order_detail_terminal_coupon"
+              android:layout_width="wrap_content" 
+              android:layout_height="30dp"
+              android:text=""
+              android:textSize="18sp"
+              android:textColor="#565656"
+              android:gravity="left"
+              android:layout_below="@id/tv_delivery_order_detail_pay_order_price"
+              android:layout_marginTop="5dp"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="10dp"
+              />
+          
+            <TextView
+              android:id="@+id/tv_delivery_order_detail_internet_coupon_tips"
+              android:layout_width="wrap_content" 
+              android:layout_height="30dp"
+              android:text="网络优惠:"
+              android:textSize="18sp"
+              android:textColor="#b1b1b1"
+              android:layout_below="@id/tv_delivery_order_detail_terminal_coupon_tips"
+              android:layout_marginTop="5dp"
+              android:layout_alignParentLeft="true"
+              android:layout_marginLeft="10dp"
+              android:gravity="right|center_vertical"
+              />
+          
+          <TextView
+              android:id="@+id/tv_delivery_order_detail_internet_coupon"
+              android:layout_width="wrap_content" 
+              android:layout_height="30dp"
+              android:text=""
+              android:textSize="18sp"
+              android:textColor="#565656"
+              android:gravity="left"
+              android:layout_below="@id/tv_delivery_order_detail_terminal_coupon"
+              android:layout_marginTop="5dp"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="10dp"
+              />
+          
+            <TextView
+              android:id="@+id/tv_delivery_order_detail_enterprise_rebate_tips"
+              android:layout_width="wrap_content" 
+              android:layout_height="30dp"
+              android:text="企业折扣:"
+              android:textSize="18sp"
+              android:textColor="#b1b1b1"
+              android:layout_below="@id/tv_delivery_order_detail_internet_coupon_tips"
+              android:layout_marginTop="5dp"
+              android:layout_alignParentLeft="true"
+              android:layout_marginLeft="10dp"
+              android:gravity="right|center_vertical"
+              />
+          
+          <TextView
+              android:id="@+id/tv_delivery_order_detail_enterprise_rebate"
+              android:layout_width="wrap_content" 
+              android:layout_height="30dp"
+              android:text=""
+              android:textSize="18sp"
+              android:textColor="#565656"
+              android:gravity="left"
+              android:layout_below="@id/tv_delivery_order_detail_internet_coupon"
+              android:layout_marginTop="5dp"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="10dp"
+              />
+          
+            <TextView
+              android:id="@+id/tv_delivery_order_detail_payable_price_tips"
+              android:layout_width="wrap_content" 
+              android:layout_height="30dp"
+              android:text="实际支付:"
+              android:textSize="18sp"
+              android:textColor="#b1b1b1"
+              android:layout_below="@id/tv_delivery_order_detail_enterprise_rebate_tips"
+              android:layout_marginTop="5dp"
+              android:layout_alignParentLeft="true"
+              android:layout_marginLeft="10dp"
+              android:gravity="right|center_vertical"
+              />
+          
+          <TextView
+              android:id="@+id/tv_delivery_order_detail_payable_price"
+              android:layout_width="wrap_content" 
+              android:layout_height="30dp"
+              android:text=""
+              android:textSize="18sp"
+              android:textColor="#565656"
+              android:gravity="left"
+              android:layout_below="@id/tv_delivery_order_detail_enterprise_rebate"
+              android:layout_marginTop="5dp"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="10dp"
+              />
+          
+			
+            
+          <View
+              android:id="@+id/delivery_line_right_2"
+              android:layout_width="250dp"
+              android:layout_height="0.5dp"
+              android:layout_below="@id/tv_delivery_order_detail_payable_price_tips"
+              android:layout_marginTop="10dp"
+              android:layout_centerHorizontal="true"
+              android:background="#d2d2d2" 
+              />
+          
+          
+            <TextView
+              android:id="@+id/tv_delivery_order_detail_yjpay_tips"
+              android:layout_width="80dp" 
+              android:layout_height="30dp"
+              android:text="一键支付:"
+              android:textSize="18sp"
+              android:textColor="#b1b1b1"
+              android:layout_below="@id/delivery_line_right_2"
+              android:layout_marginTop="10dp"
+              android:layout_alignParentLeft="true"
+              android:layout_marginLeft="5dp"
+              android:gravity="left|center_vertical"
+              />
+          
+          <TextView
+              android:id="@+id/tv_delivery_order_detail_yjpay"
+              android:layout_width="wrap_content" 
+              android:layout_height="30dp"
+              android:text=""
+              android:textSize="18sp"
+              android:textColor="#565656"
+              android:layout_below="@id/delivery_line_right_2"
+              android:layout_marginTop="10dp"
+              android:layout_toRightOf="@id/tv_delivery_order_detail_yjpay_tips"
+              android:layout_marginLeft="5dp"
+              android:gravity="right|center_vertical"
+              />
+          
+              <TextView
+              android:id="@+id/tv_delivery_order_detail_pos_tips"
+              android:layout_width="wrap_content" 
+              android:layout_height="30dp"
+              android:text="pos:"
+              android:textSize="18sp"
+              android:textColor="#b1b1b1"
+              android:layout_below="@id/delivery_line_right_2"
+              android:layout_marginTop="10dp"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="65dp"
+              android:gravity="right|center_vertical"
+              />
+          
+          <TextView
+              android:id="@+id/tv_delivery_order_detail_pos"
+              android:layout_width="wrap_content" 
+              android:layout_height="30dp"
+              android:text=""
+              android:textSize="18sp"
+              android:textColor="#565656"
+              android:layout_below="@id/delivery_line_right_2"
+              android:layout_marginTop="10dp"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="5dp"
+              android:gravity="right|center_vertical"
+              />
+          
+          
+           <TextView
+              android:id="@+id/tv_delivery_order_detail_wechat_tips"
+              android:layout_width="80dp" 
+              android:layout_height="30dp"
+              android:text="微信支付:"
+              android:textSize="18sp"
+              android:textColor="#b1b1b1"
+              android:layout_below="@id/tv_delivery_order_detail_yjpay"
+              android:layout_marginTop="1dp"
+              android:layout_alignParentLeft="true"
+              android:layout_marginLeft="5dp"
+              android:gravity="left|center_vertical"
+              />
+          
+          <TextView
+              android:id="@+id/tv_delivery_order_detail_wechat"
+              android:layout_width="wrap_content" 
+              android:layout_height="30dp"
+              android:text=""
+              android:textSize="18sp"
+              android:textColor="#565656"
+              android:gravity="left|center_vertical"
+              android:layout_below="@id/tv_delivery_order_detail_yjpay"
+              android:layout_marginTop="1dp"
+              android:layout_toRightOf="@id/tv_delivery_order_detail_wechat_tips"
+              android:layout_marginLeft="5dp"
+              />
+          
+            <TextView
+              android:id="@+id/tv_delivery_order_detail_cash_tips"
+              android:layout_width="wrap_content" 
+              android:layout_height="30dp"
+              android:text="现金:"
+              android:textSize="18sp"
+              android:textColor="#b1b1b1"
+              android:layout_below="@id/tv_delivery_order_detail_yjpay"
+              android:layout_marginTop="1dp"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="65dp"
+              android:gravity="right|center_vertical"
+              />
+          
+          <TextView
+              android:id="@+id/tv_delivery_order_detail_cash"
+              android:layout_width="wrap_content" 
+              android:layout_height="30dp"
+              android:text=""
+              android:textSize="18sp"
+              android:textColor="#565656"
+              android:gravity="left|center_vertical"
+              android:layout_below="@id/tv_delivery_order_detail_yjpay"
+              android:layout_marginTop="1dp"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="5dp"
+              />
+          
+          
+          
+            <TextView
+              android:id="@+id/tv_delivery_order_detail_pay_coupon_tips"
+              android:layout_width="80dp" 
+              android:layout_height="30dp"
+              android:text="优惠券:"
+              android:textSize="18sp"
+              android:textColor="#b1b1b1"
+              android:layout_below="@id/tv_delivery_order_detail_wechat_tips"
+              android:layout_marginTop="1dp"
+              android:layout_alignParentLeft="true"
+              android:layout_marginLeft="5dp"
+              android:gravity="left|center_vertical"
+              />
+          
+          <TextView
+              android:id="@+id/tv_delivery_order_detail_pay_coupon"
+              android:layout_width="wrap_content" 
+              android:layout_height="30dp"
+              android:text=""
+              android:textSize="18sp"
+              android:textColor="#565656"
+              android:gravity="left|center_vertical"
+              android:layout_below="@id/tv_delivery_order_detail_wechat"
+              android:layout_marginTop="1dp"
+              android:layout_toRightOf="@id/tv_delivery_order_detail_pay_coupon_tips"
+              android:layout_marginLeft="5dp"
+              />
+          
+         
+           
+           <TextView
+              android:id="@+id/tv_delivery_order_detail_pay_user_account_tips"
+              android:layout_width="80dp" 
+              android:layout_height="30dp"
+              android:text="用户账户:"
+              android:textSize="18sp"
+              android:textColor="#b1b1b1"
+              android:layout_below="@id/tv_delivery_order_detail_pay_coupon_tips"
+              android:layout_marginTop="1dp"
+              android:layout_alignParentLeft="true"
+              android:layout_marginLeft="5dp"
+              android:gravity="left|center_vertical"
+              />
+          
+          <TextView
+              android:id="@+id/tv_delivery_order_detail_pay_user_account"
+              android:layout_width="wrap_content" 
+              android:layout_height="30dp"
+              android:text=""
+              android:textSize="18sp"
+              android:textColor="#565656"
+              android:gravity="left|center_vertical"
+              android:layout_below="@id/tv_delivery_order_detail_pay_coupon_tips"
+              android:layout_marginTop="1dp"
+              android:layout_toRightOf="@id/tv_delivery_order_detail_pay_user_account_tips"
+              android:layout_marginLeft="5dp"
+              />
+          
+            
+            <TextView
+              android:id="@+id/tv_delivery_order_detail_pay_prepaid_card_amount_tips"
+              android:layout_width="80dp" 
+              android:layout_height="30dp"
+              android:text="充值卡:"
+              android:textSize="18sp"
+              android:textColor="#b1b1b1"
+              android:layout_below="@id/tv_delivery_order_detail_pay_user_account"
+              android:layout_marginTop="1dp"
+              android:layout_alignParentLeft="true"
+              android:layout_marginLeft="5dp"
+              android:gravity="left|center_vertical"
+              />
+          
+          <TextView
+              android:id="@+id/tv_delivery_order_detail_pay_prepaid_card_amount"
+              android:layout_width="wrap_content" 
+              android:layout_height="30dp"
+              android:text=""
+              android:textSize="18sp"
+              android:textColor="#565656"
+              android:gravity="left|center_vertical"
+              android:layout_below="@id/tv_delivery_order_detail_pay_user_account"
+              android:layout_marginTop="1dp"
+              android:layout_toRightOf="@id/tv_delivery_order_detail_pay_prepaid_card_amount_tips"
+              android:layout_marginLeft="5dp"
+              />
+			</RelativeLayout>       	    
+       	</ScrollView>
+     	     
+      
+    </RelativeLayout>
+      
+      
+
+</RelativeLayout>

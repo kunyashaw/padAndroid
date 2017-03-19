@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6">
+
+    <RelativeLayout
+        android:id="@+id/rl_layout_stock_supply_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f6f6f6">
+
+        <Button
+            android:id="@+id/stock_supply_empty_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/empty_order"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:textColor="#ff565656"
+            android:text="当前页面没有数据"
+            />
+
+        <ListView
+            android:id="@+id/listview_stock_supply_main"
+            android:layout_width="842dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="91dp"
+            android:layout_marginTop="19dp"
+            android:background="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="16dp"
+            android:fastScrollEnabled="true"
+            android:scrollbarFadeDuration="100000" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout_stock_supply_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="#b0000000"
+        android:visibility="invisible"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_frameLayout_stock_supply_dialog"
+            android:layout_width="695dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+             />
+    </FrameLayout>
+</RelativeLayout>

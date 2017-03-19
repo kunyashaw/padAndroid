@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <TextView
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:text="设置店铺与收银台名称"
+        android:textSize="35dp"
+        android:textColor="@color/Strong"
+        android:alpha="0.7"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="93dp"
+        android:layout_centerHorizontal="true"
+        />
+    
+    <View 
+        android:layout_width="505dp"
+        android:layout_height="0.5dp"
+        android:background="#cccccc"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="217dp"
+        android:layout_centerHorizontal="true"
+        />
+    
+    <RelativeLayout
+        android:layout_width="505dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="218dp" 
+        >
+        
+        <TextView
+            android:layout_width="wrap_content" 
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dp"
+            android:text="店铺名称"
+            android:textColor="@color/Strong"
+            android:textSize="20dp"
+            android:alpha="0.4"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            />
+        
+        <EditText
+            android:id="@+id/et_set_store_name"
+            android:layout_width="300dp" 
+            android:layout_height="75dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/Pale"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:gravity="right|center_vertical"
+            />
+        
+    </RelativeLayout>
+    
+      <View 
+        android:layout_width="505dp"
+        android:layout_height="0.5dp"
+        android:background="#cccccc"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="293dp"
+        android:layout_centerHorizontal="true"
+        />
+    
+        <RelativeLayout
+        android:layout_width="505dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="294dp" 
+        >
+        
+        <TextView
+            android:layout_width="wrap_content" 
+            android:layout_height="75dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:text="收银台名称"
+            android:textColor="@color/Strong"
+            android:textSize="20dp"
+            android:alpha="0.4"
+            android:gravity="center_vertical"
+            />
+        
+        <EditText
+            android:id="@+id/et_set_checkstand_name"
+            android:layout_width="300dp" 
+            android:layout_height="75dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/Pale"
+            android:textSize="20dp"
+            android:background="@android:color/transparent"
+            android:gravity="right|center_vertical"
+            />
+    </RelativeLayout>
+    
+       <View 
+        android:layout_width="505dp"
+        android:layout_height="0.5dp"
+        android:background="#cccccc"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="368dp"
+        android:layout_centerHorizontal="true"
+        />
+        
+        <Button
+            android:id="@+id/btn_finish_init"
+            android:layout_width="150dp"
+            android:layout_height="40dp" 
+            android:text="完成"
+            android:textColor="@color/Blue"
+            android:textSize="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_blue_stoke"
+            android:layout_centerHorizontal="true"
+            />
+
+</RelativeLayout>

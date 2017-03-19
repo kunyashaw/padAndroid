@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="256dp"
+    android:layout_height="50dp"
+    android:id="@+id/rl_stock_plan_product"
+    android:background="@drawable/stock_plan_listview_item_bg"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/tv_stock_plan_product_name"
+        android:textColor="@color/Forceful"
+        android:textSize="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="23dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/textview_stock_plan_whether_open"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textColor="@color/Pale"
+        android:textSize="13dp"
+        android:text="开启"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="23dp"
+        android:visibility="invisible"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_toLeftOf="@id/textview_stock_plan_whether_open"
+        android:layout_marginRight="9dp">
+
+        <ImageView
+            android:id="@+id/imageview_stock_plan_whether_show"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            android:src="@drawable/stock_plan_icon"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="256dp"
+        android:layout_height="0.5dp"
+        android:background="#dddddd"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

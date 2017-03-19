@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="228dp"
+    android:layout_height="170dp"
+    android:background="@drawable/gird_waiting_push_item_top_corner"
+   	>
+    
+  <LinearLayout
+      android:layout_width="match_parent" 
+      android:layout_height="wrap_content"
+      android:id="@+id/ll_gridview_item"
+      android:orientation="vertical"
+      >
+      
+      <Button
+         android:id="@+id/button_gridview_speacial_name"
+          android:layout_width="match_parent"
+          android:layout_height="47dp"
+          android:gravity="center"
+          android:layout_gravity="center"
+          android:textSize="20sp"
+        	  android:text="test"  
+        	  android:background="@android:color/transparent"
+        	  android:textColor="#363636"         
+        	  android:ellipsize="end"
+          android:singleLine="true"
+          android:maxWidth="228dp"
+          />
+      
+      <View
+          android:layout_width="match_parent" 
+          android:layout_height="0.5dp"
+          android:background="#dddddd"
+          />
+      
+      <RelativeLayout
+          android:id="@+id/rl_grid_waiting_push_item"
+          android:layout_width="match_parent"
+          android:layout_height="80dp" 
+          >
+
+           <RelativeLayout 
+               android:layout_width="60dp"
+               android:layout_height="wrap_content"
+               android:layout_alignParentTop="true"
+               android:layout_marginTop="16dp"
+               android:layout_alignParentLeft="true"
+               android:layout_marginLeft="40dp"
+               >
+		          <TextView
+		              android:layout_width="60dp"
+		              android:layout_height="wrap_content"
+		              android:textColor="#363636"
+		              android:textSize="30sp"
+		              android:id="@+id/tv_gridview_item_eaten_num"
+		              android:gravity="center"
+		              android:text="0"
+		              />
+           </RelativeLayout>
+           
+              <!--   android:layout_alignParentLeft="true"
+		              android:layout_marginLeft="60dp"
+		              android:layout_alignParentTop="true"
+		              android:layout_marginTop="16dp"
+              -->
+           <RelativeLayout 
+               android:layout_width="60dp"
+               android:layout_height="wrap_content"
+               android:layout_alignParentTop="true"
+               android:layout_marginTop="16dp"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="40dp"
+               >
+               
+               <TextView
+	              android:layout_width="match_parent"
+	              android:layout_height="wrap_content"
+	              android:textColor="#363636"
+	              android:textSize="30sp"
+	              android:id="@+id/tv_gridview_item_package_num"
+	              android:gravity="center"
+	              android:text="0"
+              />
+               <!-- 
+	              android:layout_alignParentRight="true"
+	              android:layout_marginRight="60dp"
+	              android:layout_alignParentTop="true"
+	              android:layout_marginTop="16dp"
+                -->
+               
+           </RelativeLayout>  
+             
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="堂食"
+                  android:textColor="#898989"
+                  android:textSize="15sp"
+                  android:layout_alignParentLeft="true"
+                  android:layout_marginLeft="55dp"
+                  android:layout_alignParentBottom="true"
+                  android:layout_marginBottom="10dp"
+                  />
+              
+               <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="打包"
+                  android:textColor="#898989"
+                  android:textSize="15sp"
+                  android:layout_alignParentRight="true"
+                  android:layout_marginRight="55dp"
+                  android:layout_alignParentBottom="true"
+                  android:layout_marginBottom="10dp"
+                  />
+          
+          
+      </RelativeLayout>
+      
+       <View
+          android:layout_width="match_parent" 
+          android:layout_height="0.5dp"
+          android:background="#dddddd"
+          />
+      
+      
+      <Button
+        android:id="@+id/button_gridview_item_new_info"
+	    android:layout_width="match_parent" 
+	    android:layout_height="45dp"
+	    android:textSize="16sp"
+	    android:background="@drawable/gird_waiting_push_item_bottom_corner"
+	    android:gravity="center"/>
+      
+  </LinearLayout>
+  
+
+</RelativeLayout>

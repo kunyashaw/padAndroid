@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+    >
+    
+    <RelativeLayout
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent"
+        >
+        
+            <RelativeLayout
+               android:id="@+id/rl_takeup_choose_close"
+               android:layout_width="100dp"
+               android:layout_height="100dp" 
+               android:layout_alignParentRight="true"
+	           android:layout_alignParentTop="true"
+               >
+               
+               <Button
+		           android:id="@+id/button_takeup_choose_close"
+		           android:layout_width="29dp" 
+		           android:layout_height="29dp"
+		           android:background="@drawable/closed_selector"
+		           android:layout_alignParentRight="true"
+	          	   android:layout_alignParentTop="true"
+		           android:layout_marginTop="31dp"
+	          	   android:layout_marginRight="31dp"
+	           />
+               
+           </RelativeLayout>
+        
+         <!-- <Button
+           android:id="@+id/button_takeup_choose_close"
+           android:layout_width="29dp" 
+           android:layout_height="29dp"
+           android:background="@drawable/closed_selector"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentTop="true"
+           android:layout_marginTop="31dp"
+           android:layout_marginRight="31dp"
+           /> -->
+        
+        		<ScrollView
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="100dp"
+        		    android:layout_alignParentTop="true"
+        		    android:layout_marginTop="56.5dp"
+        		    android:layout_centerHorizontal="true"
+        		    android:layout_marginLeft="60dp"
+        		    android:layout_marginRight="60dp"
+        		    android:scrollbarFadeDuration="100000" 
+        		    >
+        		    <TextView
+			        android:id="@+id/tv_dialog_choose_take_mode_content"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textSize="20sp"
+			        android:textColor="#484848"
+			        android:gravity="center"
+			        android:layout_alignParentTop="true"
+			        android:layout_centerHorizontal="true"
+			        />
+        		</ScrollView>
+    
+	     <Button
+	        android:id="@+id/button_dialog_choose_take_mode_packaged"
+	        android:layout_width="184dp"
+	        android:layout_height="184dp" 
+	        android:textSize="20sp"
+	        android:textColor="#ff6BA4FA"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginTop="185.5dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="188dp"
+	        android:background="@drawable/choose_packaged_takeup_selector"
+	        />
+	     
+	     <TextView
+	         android:layout_width="184dp"
+	         android:layout_height="wrap_content"
+	         android:layout_below="@id/button_dialog_choose_take_mode_packaged"
+	         android:layout_marginTop="30dp"
+	         android:textColor="#565656"
+	         android:textSize="21sp"
+	         android:alpha="0.4" 
+	         android:text="打包带走"
+	         android:layout_alignParentLeft="true"
+	         android:layout_marginLeft="188dp"
+	         android:gravity="center"
+	         />
+	    
+	    
+	    <Button
+	        android:id="@+id/button_dialog_choose_take_mode_eatin"
+	        android:layout_width="184dp"
+	        android:layout_height="184dp"
+	        android:textSize="20sp"
+	        android:textColor="#ff6BA4FA"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginTop="185.5dp"
+	        android:layout_toRightOf="@id/button_dialog_choose_take_mode_packaged"
+	        android:layout_marginLeft="132dp"
+	        android:background="@drawable/choose_eatin_takeup_selector"
+	        />
+	    <TextView
+	         android:layout_width="184dp"
+	         android:layout_height="wrap_content"
+	         android:layout_below="@id/button_dialog_choose_take_mode_eatin"
+	         android:layout_marginTop="30dp"
+	         android:textColor="#565656"
+	         android:textSize="21sp"
+	         android:alpha="0.4" 
+	         android:text="在店里吃"
+	         android:gravity="center"
+	         android:layout_toRightOf="@id/button_dialog_choose_take_mode_packaged"
+	        	 android:layout_marginLeft="132dp"
+	         />    
+    
+    </RelativeLayout>
+    
+
+</RelativeLayout>

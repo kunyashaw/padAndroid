@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="310dp"
+    android:layout_height="210dp"
+    android:background="@drawable/gridview_delivery_item_background" >
+
+    <RelativeLayout
+        android:id="@+id/gridview_delivery_waiting_delivery_search_head"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentTop="true"
+         >
+
+        <TextView
+            android:id="@+id/tv_gridview_delivery_waiting_delivery_search_serinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="22dp"
+            android:textColor="#ffffff"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/tv_gridview_delivery_waiting_delivery_item_delivery_search_left_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="22dp"
+            android:alpha="0.6"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_gridview_delivery_waiting_delivery_item_delivery_search_building_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="53dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_gridview_delivery_waiting_delivery_item_delivery_search_order_content"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18sp"
+            android:layout_marginTop="106dp"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:lines="2"
+            android:textColor="#898989"
+            android:textSize="14sp"
+            />
+    </RelativeLayout>
+
+
+    
+
+    <Button
+        android:id="@+id/button_gridview_delivery_waiting_delivery_item_delivery_search_order_single"
+        android:layout_width="154dp"
+        android:layout_height="47dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="@android:color/transparent"
+        android:text="配送"
+        android:textColor="#4385f6"
+        android:textSize="16sp" />
+    
+       <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="161dp"
+        android:background="#e5e5e5" />
+
+    </RelativeLayout>

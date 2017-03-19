@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1024dp"
+    android:layout_height="768dp"
+    android:background="#b0000000" >
+
+    
+    
+    
+    <RelativeLayout
+        android:id="@+id/rl_dialog_show_history_main"
+        android:layout_width="695dp"
+    		android:layout_height="525dp"
+    		android:background="@drawable/popup_window"
+    		android:layout_gravity="center|center_horizontal"
+    		android:gravity="center_horizontal"
+    		android:layout_alignParentLeft="true"
+    		android:layout_marginLeft="164.5dp"
+    		android:layout_alignParentTop="true"
+    		android:layout_marginTop="121.5dp"
+        >
+        
+    <!-- *****************************dialog 标题  ***************************** -->
+	
+	<RelativeLayout
+	    android:id="@+id/rl_dialog_show_history_choosen_close"
+	    android:layout_width="90dp"
+	    android:layout_height="90dp"
+	    android:layout_alignParentTop="true"
+	    android:layout_alignParentRight="true"
+	    >
+	    
+	    <Button
+	        android:id="@+id/button_dialog_show_history_choosen_close"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:background="@drawable/closed_selector"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginTop="30dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="30dp"
+	        />
+	    
+	</RelativeLayout>
+	
+	 
+	
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39.5dp"
+        android:text="出餐明细"
+        android:textColor="#363636"
+        android:textSize="18sp" />
+
+    <!-- ***************************** content   ***************************** -->
+
+    <TextView
+        android:id="@+id/textview_dialog_show_history_serinal_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="87.5dp"
+        android:layout_marginTop="119.5dp"
+        android:gravity="right|center_vertical"
+        android:text="流水号"
+        android:textColor="#898989"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textview_dialog_show_history_serinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="87.5dp"
+        android:layout_marginTop="119.5dp"
+        android:gravity="right"
+        android:text="113-1"
+        android:textColor="#353535"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="475dp"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/textview_dialog_show_history_serinal_tips"
+        android:layout_marginTop="28dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="87.5dp"
+        android:background="#dddddd" />
+
+    <TextView
+        android:id="@+id/textview_dialog_show_history_content_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textview_dialog_show_history_serinal_tips"
+        android:layout_marginLeft="87.5dp"
+        android:layout_marginTop="56dp"
+        android:gravity="right|center_vertical"
+        android:text="出餐内容:"
+        android:textColor="#898989"
+        android:textSize="18sp" />
+	
+	<ScrollView 
+	    android:id="@+id/sv_dialog_show_history_choosen_content"
+	    android:layout_width="wrap_content"
+	    android:layout_height="140dp"
+     	android:layout_alignParentRight="true"
+        android:layout_below="@id/textview_dialog_show_history_serinal_tips"
+        android:layout_marginRight="87.5dp"
+        android:layout_marginTop="56dp"
+        android:scrollbars="none"
+	    >
+    		<TextView
+        android:id="@+id/textview_dialog_show_history_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|right"
+        android:text="白米粥×3、茶叶蛋"
+        android:textColor="#353535"
+        android:textSize="18sp" />
+	    
+	</ScrollView>
+
+        <Button
+            android:id="@+id/button_dialog_long_choose_push_only"
+            android:layout_width="194dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="43dp"
+            android:layout_centerHorizontal="true"
+
+            android:background="@drawable/btn_blue_solid"
+
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:text="再次打印"
+            android:visibility="invisible"
+            />
+
+
+    <Button
+        android:id="@+id/button_dialog_long_choose_push"
+        android:layout_width="194dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+		
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="43dp"
+		        
+       android:layout_alignParentRight="true"
+        android:layout_marginRight="117.5dp"
+        
+        android:background="@drawable/btn_blue_solid"
+        
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:text="再次打印" />
+
+    <Button
+        android:id="@+id/button_dialog_show_choose_close"
+        android:layout_width="194dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="43dp"
+		        
+         android:layout_alignParentLeft="true"
+        android:layout_marginLeft="117.5dp"
+        
+        android:background="@drawable/btn_red_solid"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:text="打印清单"
+        android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</RelativeLayout>

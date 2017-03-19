@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/tv_dialog_show_refund_part_money_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp" 
+        />
+
+    <TextView 
+        android:id="@+id/tv_dialog_show_refund_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_dialog_show_refund_part_money_total"
+        android:layout_marginTop="10dp"
+        android:text="退款金额"
+        />
+    
+    <TextView
+        android:id="@+id/tv_dialog_show_refund_detail" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_dialog_show_refund_tips"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:hint="0.00"
+        />
+    
+    
+    <Button
+        android:id="@+id/btn_dialog_show_refund_custon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_dialog_show_refund_detail"
+        android:layout_marginTop="10dp"
+        android:text="自定义退款方案" 
+        />
+    
+    
+    <Button
+        android:id="@+id/tv_dialog_show_refund_do"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:text="立即退款"
+        android:layout_below="@id/tv_dialog_show_refund_tips"
+        android:layout_marginTop="20dp"
+        />
+    
+    <Button
+        android:id="@+id/tv_dialog_show_refund_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="取消"
+        android:layout_below="@id/tv_dialog_show_refund_tips"
+        android:layout_marginTop="20dp"
+       />
+
+    
+</RelativeLayout>

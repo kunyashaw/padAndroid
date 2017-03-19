@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="99dp"
+    android:layout_height="match_parent"
+    >
+    
+    <ListView
+        android:id="@+id/listview_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="582dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="31dp"
+        android:divider="@null"
+        />
+    
+	
+    <RelativeLayout
+        android:id="@+id/relativat_layout_navigation_bar_user_info"
+        android:layout_width="match_parent" 
+        android:layout_height="97dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="128dp"
+        >
+        
+        <com.huofu.RestaurantOS.support.shapedImage.CircleImageView
+	        android:id="@+id/circleImageView_navigation_now_login_user_head"
+	        android:layout_width="51dp"
+	        android:layout_height="51dp"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginTop="14dp"
+	        android:layout_centerHorizontal="true"
+        />
+        
+        <TextView
+	        android:id="@+id/textview_navigation_bar_now_login_user_name"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/circleImageView_navigation_now_login_user_head"
+	        android:layout_marginTop="6dp"
+	        android:textSize="13sp"
+	        android:textColor="#ffffff"
+	        android:gravity="center_horizontal"
+	        android:alpha="0.6"
+        />
+        
+    </RelativeLayout>
+    
+    
+     <RelativeLayout
+        android:id="@+id/rl_navigation_bar_exit"
+     	android:layout_width="match_parent" 
+        android:layout_height="97dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="31dp"
+        >
+    
+         <ImageView
+             android:id="@+id/imageview_navigation_bar_exit" 
+             android:layout_width="51dp"
+             android:layout_height="51dp"
+             android:layout_alignParentTop="true"
+        		 android:layout_marginTop="14dp"
+        		 android:layout_centerHorizontal="true"
+        		 android:background="@drawable/icon_exit"
+             />
+         
+	    <TextView
+	        android:id="@+id/textview_navigation_bar_exit"
+	        android:layout_width="match_parent" 
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/imageview_navigation_bar_exit"
+	        android:layout_marginTop="6dp"
+	        android:textSize="13sp"
+	        android:textColor="#ffffff"
+	        android:alpha="0.6"
+	        android:text="点击退出"
+	        android:gravity="center_horizontal"
+	        /> 
+        
+    </RelativeLayout>
+    
+
+</RelativeLayout>

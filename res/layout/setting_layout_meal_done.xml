@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:test="http://schemas.android.com/apk/res-auto"
+    android:layout_width="690dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_layout_meal_done_toggle_call"
+        android:layout_width="630dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/tv_setting_layout_meal_done_toggle_call_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="智能出餐"
+            android:textColor="#363636"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp">
+
+            <com.huofu.RestaurantOS.widget.toggleButton.zcw.togglebutton.ToggleButton
+                android:id="@+id/btn_setting_layout_toggle_auto_push"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!--<TextView
+        android:id="@+id/tvAutoPushMealProgress"
+        android:layout_width="630dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/rl_setting_layout_meal_done_toggle_call"
+
+        />-->
+
+</RelativeLayout>
+
+
+    <!--  <com.shanfubaoAndroid.cutomWidget.SlipButton
+                     android:id="@+id/btn_setting_layout_toggle_auto_push"
+                     android:layout_width="100dp"
+                     android:layout_height="60dp"
+                     android:layout_centerVertical="true"
+                     test:bg="@drawable/sb_bg"
+                       test:slipImg="@drawable/sb_slip_img"
+                       test:slipOn="false" />  -->

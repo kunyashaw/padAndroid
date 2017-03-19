@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="630dp"
+     android:layout_height="60dp"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:id="@+id/rl_setting_delivery_building"
+         android:layout_width="630dp"
+         android:layout_height="60dp"
+         android:layout_alignParentLeft="true"
+         android:background="#ffffff"
+        >
+        
+        <TextView
+            android:id="@+id/tv_setting_delivery_name"
+            android:layout_width="wrap_content" 
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:textColor="#363636"
+            android:textSize="16sp"
+            android:text="万通中心test"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            />
+        
+	    <ImageView
+	        android:id="@+id/imageview_setting_layout_delivery_title_right_arrow"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/arrow_right_pressed"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="23dp"
+	        android:layout_centerVertical="true"/>
+	    
+	    <TextView
+	        android:id="@+id/tv_setting_delivery_adress"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="60dp"
+	        android:gravity="center_vertical"
+	        android:textSize="18sp"
+	        android:textColor="#898989"
+	        android:text="朝阳区朝阳门外大街甲6号"
+	        android:layout_toLeftOf="@id/imageview_setting_layout_delivery_title_right_arrow"
+	        android:layout_marginRight="11dp"
+	        />
+	    
+	      <View
+	        android:layout_width="match_parent" 
+	        android:layout_height="0.5dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="22dp"
+	        android:background="#dddddd"
+	        android:layout_alignParentBottom="true"
+        		/>
+	        
+	        
+    </RelativeLayout>
+
+</RelativeLayout>

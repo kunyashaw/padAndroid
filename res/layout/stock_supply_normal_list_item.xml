@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="842dp"
+    android:layout_height="141dp"
+    android:minHeight="141dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/stock_supply_normal_list_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="33dp"
+        android:text="肉夹馍"
+        android:textSize="32dp"
+        android:textColor="@color/Powerful"
+        />
+
+    <TextView
+        android:id="@+id/textview_stock_suppply_normal_list_item_presell_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stock_supply_normal_list_item_name"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="33dp"
+        android:text="总预定"
+        android:textSize="16sp"
+        android:textColor="@color/Pale"
+        />
+
+    <TextView
+        android:id="@+id/textview_stock_suppply_normal_list_item_presell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/Forceful"
+        android:text="0"
+        android:layout_below="@id/stock_supply_normal_list_item_name"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/textview_stock_suppply_normal_list_item_presell_tips"
+        android:layout_marginLeft="8dp"
+        />
+
+    <TextView
+        android:id="@+id/textview_stock_supply_normal_list_item_booked_this_timebucket_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stock_supply_normal_list_item_name"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="196dp"
+        android:text="本时段预定"
+        android:textSize="16sp"
+        android:textColor="@color/Pale"
+        />
+
+    <TextView
+        android:id="@+id/textview_stock_supply_normal_list_item_booked_this_timebucket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/Forceful"
+        android:text="0"
+        android:layout_below="@id/stock_supply_normal_list_item_name"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/textview_stock_supply_normal_list_item_booked_this_timebucket_tips"
+        android:layout_marginLeft="8dp"
+        />
+
+    <TextView
+        android:id="@+id/textview_stock_supply_normal_list_item_already_pushed_meal_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stock_supply_normal_list_item_name"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="359dp"
+        android:text="已出餐"
+        android:textSize="16sp"
+        android:textColor="@color/Pale"
+        />
+
+    <TextView
+        android:id="@+id/textview_stock_supply_normal_list_item_already_pushed_meal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/Forceful"
+        android:text="0"
+        android:layout_below="@id/stock_supply_normal_list_item_name"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/textview_stock_supply_normal_list_item_already_pushed_meal_tips"
+        android:layout_marginLeft="8dp"
+        />
+
+
+    <TextView
+        android:id="@+id/textview_stock_supply_normal_list_item_waiting_push_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stock_supply_normal_list_item_name"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="522dp"
+        android:text="待出餐"
+        android:textSize="16sp"
+        android:textColor="@color/Pale"
+        />
+
+    <TextView
+        android:id="@+id/textview_stock_supply_normal_list_item_waiting_push"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/Forceful"
+        android:text="0"
+        android:layout_below="@id/stock_supply_normal_list_item_name"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/textview_stock_supply_normal_list_item_waiting_push_tips"
+        android:layout_marginLeft="8dp"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_stock_supply_normal_list_item_modify"
+        android:layout_width="174dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="26dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/stock_supply_normal_btn_selector"
+        >
+
+       <TextView
+           android:id="@+id/textview_stock_supply_normal_list_item_left_tips"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_marginLeft="38dp"
+           android:textSize="16sp"
+           android:textColor="@color/Pale"
+           android:text="剩余"
+           android:layout_centerVertical="true"
+           />
+
+        <Button
+            android:id="@+id/button_stock_supply_normal_modify_number"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/Blue"
+            android:text="100"
+            android:background="@android:color/transparent"
+            android:layout_toRightOf="@id/textview_stock_supply_normal_list_item_left_tips"
+            android:layout_marginLeft="18dp"
+            android:layout_centerVertical="true"
+            android:gravity="left|center_vertical"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+

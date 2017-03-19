@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroudColor">
+
+
+    <SearchView
+        android:id="@+id/searchView_stock_plan"
+        android:layout_width="214dp"
+        android:layout_height="39dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/search_icon_seletcor" />
+
+    <ListView
+        android:id="@+id/listview_product_stock_plan"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/searchView_stock_plan"
+        android:divider="@color/DividerBackgroundColor"
+        android:background="@drawable/stock_plan_listview_item_bg"
+        android:scrollbarFadeDuration="1000000" />
+
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="256dp"
+        android:alpha="0.2"
+        android:background="#000000" />
+
+
+    <ScrollView
+        android:layout_width="768dp"
+        android:layout_height="match_parent"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="256dp"
+        android:layout_marginTop="18dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_layout_stock_plan_set_main"
+            android:layout_width="768dp"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="695dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true">
+
+                <RelativeLayout
+                    android:id="@+id/rl_modify_stock_plan_open_inventory"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="28dp"
+                    android:background="@color/Constrast">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="40dp"
+                        android:gravity="center"
+                        android:text="开启库存"
+                        android:textColor="@color/Forceful"
+                        android:textSize="18sp" />
+
+                    <com.huofu.RestaurantOS.widget.toggleButton.zcw.togglebutton.ToggleButton
+                        android:id="@+id/toggleButton_stock_plan_open_inventory"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="35dp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_stock_supply_plan_periodec_inventory"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/rl_modify_stock_plan_open_inventory"
+                    android:layout_marginTop="28dp"
+                    android:background="@color/Constrast">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="40dp"
+                        android:gravity="center"
+                        android:text="开启周期库存"
+                        android:textColor="@color/Forceful"
+                        android:textSize="18sp" />
+
+                    <com.huofu.RestaurantOS.widget.toggleButton.zcw.togglebutton.ToggleButton
+                        android:id="@+id/toggleButton_stock_plan_open_periodic_inventory"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="35dp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textview_modify_stock_plan_closed_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/rl_stock_supply_plan_periodec_inventory"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/stockSupplyOpenPeriodicTips"
+                    android:textColor="@color/Dusky"
+                    android:textSize="16sp" />
+
+                <ScrollView
+                    android:id="@+id/scrollview_modify_stock_plan_closed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textview_modify_stock_plan_closed_tips"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/BackgroudColor">
+
+                    <LinearLayout
+                        android:id="@+id/ll_stock_plan_open_periodec_list_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+                </ScrollView>
+
+                <RelativeLayout
+                    android:id="@+id/rl_layout_modify_stock_plan_closed_choose_normal_inventory"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/textview_modify_stock_plan_closed_tips"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/Constrast">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="30dp"
+                        android:gravity="center"
+                        android:text="当前库存数量"
+                        android:textColor="@color/Powerful"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/btn_choose_fixed_amount_layout_stock_plan_closed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="30dp"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="8dp"
+                        android:drawableRight="@drawable/arrow_right"
+                        android:gravity="center"
+                        android:text="100"
+                        android:textColor="@color/Dusky"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
